@@ -18,7 +18,6 @@ It's a mixture of various ideas and inspirations.
 
 If you're not familiar with journaling benefits I highly recommend investigating that subject.
 
-Don't know where to start?
 <img src="https://em-content.zobj.net/content/2020/04/05/yt.png" width="16px" height="16px"/> Here's my favorite [journaling video](https://www.youtube.com/watch?v=dArgOrm98Bk) from struthless (⏱️10:57)\
 <img src="https://em-content.zobj.net/content/2020/04/05/yt.png" width="16px" height="16px"/> or you can check out this [video on mood tracking](https://www.youtube.com/watch?v=TA4-qQ5wEns) by Matt D'Avella (⏱️10:45).
 
