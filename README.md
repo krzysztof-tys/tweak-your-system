@@ -38,6 +38,10 @@ The OODA loop is a decision-making framework comprising four stages: **Observe**
 
 I just want to hit 'next' button and have everything saved
 
+### ✍️ My scribbles
+
+<img src="https://github.com/krzysztof-tys/tweak-your-system/blob/main/docs/%5B1%5D%20overall%20draft.jpg" />
+
 ## 💡 How it works
 
 ### The root
@@ -64,6 +68,12 @@ After you created some routines, you can plan your whole day using routines and 
 After you run some routines, you can see statistics on your activities.
 
 Then you can focus on one area, set goals and track progress. 
+
+### ✍️ My scribbles
+
+<img src="https://github.com/krzysztof-tys/tweak-your-system/blob/main/docs/%5B3%5D%20initial%20tasks.jpg" />
+
+More scribbles in `docs/` folder
 
 ## ⭐ Sounds good?
 
