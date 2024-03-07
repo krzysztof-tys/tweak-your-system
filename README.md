@@ -81,4 +81,4 @@ If you find this project helpful, insightful, informative, valuable, engaging or
 
 ## 🆘 Help wanted!
 
-If you'd like to contribute to the project in any way you can contact me through [linkedin](https://www.linkedin.com/in/ktys/) or create an issue. As soon as the project gets in usable shape I will update readme with instructions on how to run the app. It would be awesome if you could try it out even for 5 minutes and let me know what do you think. 
+If you'd like to contribute to the project in any way you can contact me through [linkedin](https://www.linkedin.com/in/ktys/) or create an issue. As soon as the project gets in usable shape I will update readme with instructions on how to run the app. It would be awesome if you could try it out even for 5 minutes and let me know what do you think!
