@@ -1,44 +1,65 @@
-import { StatusBar } from 'expo-status-bar';
-import { useState } from 'react';
-import { Button, StyleSheet, Text, TextInput, View } from 'react-native';
-import { v4 as uuidv4 } from 'uuid';
+import { StatusBar } from "expo-status-bar";
+import { useState } from "react";
+import { Button, StyleSheet, Text, TextInput, View } from "react-native";
+import { produce } from "immer";
 
 export default function App() {
-  const [activities, setActivities] = useState([{ id: 1, name: "aaa" }, { id: 2, name: "bbb" }]);
+    const [nextId, setNextId] = useState(3);
+    const [activities, setActivities] = useState([
+        { id: 1, name: "aaa" },
+        { id: 2, name: "bbb" },
+    ]);
 
-  const addActivity = () => setActivities(produce(activities, draft => { draft.push({ id: uuidv4() }) }))
+    const addActivity = () => {
+        setActivities(
+            produce(activities, (draft) => {
+                draft.push({ id: nextId });
+            })
+        );
+        setNextId(nextId + 1);
+    };
 
-  const changeActivity = (activity, value) => {
-    const nextActivities = produce(activities, draftActivities => {
-      const index = draftActivities.indexOf(draftActivity => draftActivity.id == activity.id);
-      draftActivities[index].value = value;
-    });
+    const changeActivity = (activity, event) => {
+        const nextActivities = produce(activities, (draftActivities) => {
+            const index = draftActivities.findIndex(draftActivity => draftActivity.id === activity.id);
 
-    setActivities(nextActivities);
-  }
+            console.log(event);
+            draftActivities[index].name = event.nativeEvent.text;
+        });
 
-  const renderActivities = () => {
-    return activities.map(activity => (<TextInput key={activity.id} onChange={value => changeActivity(activity, value)} value={activity.value} placeholder="type in activity name" />))
-  }
+        setActivities(nextActivities);
+    };
 
-  return (
-    <View style={styles.container}>
-      <Text>Hello</Text>
-      {renderActivities}
-      <Button
-        onPress={addActivity}
-        title="+"
-      />
-      <StatusBar style="auto" />
-    </View>
-  );
+    const renderActivities = () => {
+        return (
+            <>
+                {activities.map((activity) => (
+                    <TextInput
+                        key={activity.id}
+                        onChange={(event) => changeActivity(activity, event)}
+                        value={activity.name}
+                        placeholder="type in activity name"
+                    />
+                ))}
+            </>
+        );
+    };
+
+    return (
+        <View style={styles.container}>
+            <Text>Hello</Text>
+            {renderActivities()}
+            <Button onPress={addActivity} title="+" />
+            <StatusBar style="auto" />
+        </View>
+    );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+    container: {
+        flex: 1,
+        backgroundColor: "#fff",
+        alignItems: "center",
+        justifyContent: "center",
+    },
 });
