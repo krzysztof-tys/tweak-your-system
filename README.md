@@ -26,11 +26,11 @@ If you're not familiar with journaling benefits I highly recommend investigating
 John Boyd was a United States Air Force fighter pilot and military strategist who is best known for developing the OODA loop concept. He made significant contributions to the fields of military strategy and aerial combat tactics.\
 The OODA loop is a decision-making framework comprising four stages: **Observe**, **Orient**, **Decide**, and **Act**. It emphasizes agility and adaptability in rapidly changing situations.
 
-### 🌌 Create systems instead of goals
+### 🌌 Create systems instead of goals idea
 
 🠮 📖 [Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](https://www.goodreads.com/book/show/40121378-atomic-habits)
 
-### 🤔 This awesome article on software development work planning
+### 🤔 This awesome article on software development planning
 
 🠮 📖 [Zacznij dowozić zadania w czasie krótszym o połowę](https://kjendrzyca.notion.site/kjendrzyca/Zacznij-dowozi-zadania-w-czasie-kr-tszym-o-po-ow-8073e7f6a8b44bcf8168ea178fed5901)
 
@@ -78,3 +78,7 @@ More scribbles in `docs/` folder
 ## ⭐ Sounds good?
 
 If you find this project helpful, insightful, informative, valuable, engaging or interesting consider showing your appreciation by giving it a star! Your support means a world to me. Thank you! 🔥
+
+## 🆘 Help wanted!
+
+If you'd like to contribute to the project in any way you can contact me through [linkedin](https://www.linkedin.com/in/ktys/) or create an issue. As soon as the project gets in usable shape I will update readme with instructions on how to run the app. It would be awesome if you could try it out even for 5 minutes and let me know what do you think. 
