@@ -1,61 +1,48 @@
 import { StatusBar } from "expo-status-bar";
 import { useState } from "react";
-import { Button, NativeSyntheticEvent, StyleSheet, Text, TextInput, TextInputChangeEventData, View } from "react-native";
+import {
+    NativeSyntheticEvent,
+    StyleSheet,
+    TextInput,
+    TextInputChangeEventData,
+} from "react-native";
 import { produce } from "immer";
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import SetupScreen from "./Screens/SetupScreen";
+import SummaryScreen from "./Screens/SummaryScreen";
+import TimerScreen from "./Screens/TimerScreen";
 
 type Activity = {
-    id: number,
-    name?: string,
+    id: number;
+    name?: string;
+};
+
+const ScreenName = {
+    Setup: "Setup",
+    Timer: "Timer",
+    Summary: "Summary",
 }
 
+const Stack = createNativeStackNavigator();
+
 export default function App() {
-    const [nextId, setNextId] = useState(3);
-    const [activities, setActivities] = useState<Activity[]>([
-        { id: 1, name: "aaa" },
-        { id: 2, name: "bbb" },
-    ]);
-
-    const addActivity = () => {
-        setActivities(
-            produce(activities, (draft) => {
-                draft.push({ id: nextId });
-            })
-        );
-        setNextId(nextId + 1);
-    };
-
-    const changeActivity = (activity: Activity, event: NativeSyntheticEvent<TextInputChangeEventData>) => {
-        const nextActivities = produce(activities, (draftActivities) => {
-            const index = draftActivities.findIndex(draftActivity => draftActivity.id === activity.id);
-
-            draftActivities[index].name = event.nativeEvent.text;
-        });
-
-        setActivities(nextActivities);
-    };
-
-    const renderActivities = () => {
-        return (
-            <>
-                {activities.map((activity) => (
-                    <TextInput
-                        key={activity.id}
-                        onChange={(event) => changeActivity(activity, event)}
-                        value={activity.name}
-                        placeholder="type in activity name"
-                    />
-                ))}
-            </>
-        );
-    };
+    const [activities, setActivities] = useState<Activity[]>([]);
 
     return (
-        <View style={styles.container}>
-            <Text>Hello</Text>
-            {renderActivities()}
-            <Button onPress={addActivity} title="+" />
-            <StatusBar style="auto" />
-        </View>
+        <NavigationContainer>
+            <Stack.Navigator>
+                <Stack.Screen name={ScreenName.Setup}>
+                     {() => <SetupScreen activities={activities} setActivities={setActivities}/>}
+                </Stack.Screen>
+                <Stack.Screen name={ScreenName.Timer}>
+                    {() => <TimerScreen activities={activities} setActivities={setActivities} />}
+                </Stack.Screen>
+                <Stack.Screen name={ScreenName.Summary}>
+                    {() => <SummaryScreen activities={activities} setActivities={setActivities} /> }
+                </Stack.Screen>
+            </Stack.Navigator>
+        </NavigationContainer>
     );
 }
 
