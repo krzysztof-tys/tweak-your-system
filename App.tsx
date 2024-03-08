@@ -1,11 +1,16 @@
 import { StatusBar } from "expo-status-bar";
 import { useState } from "react";
-import { Button, StyleSheet, Text, TextInput, View } from "react-native";
+import { Button, NativeSyntheticEvent, StyleSheet, Text, TextInput, TextInputChangeEventData, View } from "react-native";
 import { produce } from "immer";
+
+type Activity = {
+    id: number,
+    name?: string,
+}
 
 export default function App() {
     const [nextId, setNextId] = useState(3);
-    const [activities, setActivities] = useState([
+    const [activities, setActivities] = useState<Activity[]>([
         { id: 1, name: "aaa" },
         { id: 2, name: "bbb" },
     ]);
@@ -19,11 +24,10 @@ export default function App() {
         setNextId(nextId + 1);
     };
 
-    const changeActivity = (activity, event) => {
+    const changeActivity = (activity: Activity, event: NativeSyntheticEvent<TextInputChangeEventData>) => {
         const nextActivities = produce(activities, (draftActivities) => {
             const index = draftActivities.findIndex(draftActivity => draftActivity.id === activity.id);
 
-            console.log(event);
             draftActivities[index].name = event.nativeEvent.text;
         });
 
