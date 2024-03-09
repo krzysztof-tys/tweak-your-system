@@ -1,3 +1,5 @@
+import { ParamListBase, useNavigation } from "@react-navigation/native";
+import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { StatusBar } from "expo-status-bar";
 import { produce } from "immer";
 import { useState } from "react";
@@ -21,7 +23,8 @@ type ScreenProps = {
     setActivities: (activities: Activity[]) => void,
 }
 
-const SetupScreen = ({activities, setActivities}: ScreenProps) => {
+const SetupScreen = ({activities, setActivities }: ScreenProps) => {
+    const navigation = useNavigation<NativeStackNavigationProp<ParamListBase>>();
     const [nextId, setNextId] = useState(3);
 
     const addActivity = () => {
@@ -60,11 +63,16 @@ const SetupScreen = ({activities, setActivities}: ScreenProps) => {
         );
     };
 
+    const startTiming = () => {
+        navigation.navigate("TimerScreen");
+    };
+
     return (
         <View style={styles.container}>
             <Text>Hello</Text>
             {renderActivities()}
             <Button onPress={addActivity} title="+" />
+            <Button onPress={startTiming} title=">" />
             <StatusBar style="auto" />
         </View>
     );

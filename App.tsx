@@ -18,13 +18,13 @@ type Activity = {
     name?: string;
 };
 
-const ScreenName = {
-    Setup: "Setup",
-    Timer: "Timer",
-    Summary: "Summary",
-}
+type RootStackParamList = {
+    SetupScreen: undefined;
+    TimerScreen: undefined;
+    SummaryScreen: undefined;
+};
 
-const Stack = createNativeStackNavigator();
+const Stack = createNativeStackNavigator<RootStackParamList>();
 
 export default function App() {
     const [activities, setActivities] = useState<Activity[]>([]);
@@ -32,14 +32,29 @@ export default function App() {
     return (
         <NavigationContainer>
             <Stack.Navigator>
-                <Stack.Screen name={ScreenName.Setup}>
-                     {() => <SetupScreen activities={activities} setActivities={setActivities}/>}
+                <Stack.Screen name={"SetupScreen"}>
+                    {() => (
+                        <SetupScreen
+                            activities={activities}
+                            setActivities={setActivities}
+                        />
+                    )}
                 </Stack.Screen>
-                <Stack.Screen name={ScreenName.Timer}>
-                    {() => <TimerScreen activities={activities} setActivities={setActivities} />}
+                <Stack.Screen name={"TimerScreen"}>
+                    {() => (
+                        <TimerScreen
+                            activities={activities}
+                            setActivities={setActivities}
+                        />
+                    )}
                 </Stack.Screen>
-                <Stack.Screen name={ScreenName.Summary}>
-                    {() => <SummaryScreen activities={activities} setActivities={setActivities} /> }
+                <Stack.Screen name={"SummaryScreen"}>
+                    {() => (
+                        <SummaryScreen
+                            activities={activities}
+                            setActivities={setActivities}
+                        />
+                    )}
                 </Stack.Screen>
             </Stack.Navigator>
         </NavigationContainer>
