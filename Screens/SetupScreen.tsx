@@ -13,17 +13,17 @@ import {
     View,
 } from "react-native";
 
-type Activity = {
+export type Activity = {
     id: number,
     name?: string,
 }
 
 type ScreenProps = {
     activities: Activity[],
-    setActivities: (activities: Activity[]) => void,
+    setActivities: React.Dispatch<React.SetStateAction<Activity[]>>,
 }
 
-const SetupScreen = ({activities, setActivities }: ScreenProps) => {
+const SetupScreen = ({activities, setActivities}: ScreenProps) => {
     const navigation = useNavigation<NativeStackNavigationProp<ParamListBase>>();
     const [nextId, setNextId] = useState(3);
 
@@ -63,16 +63,16 @@ const SetupScreen = ({activities, setActivities }: ScreenProps) => {
         );
     };
 
-    const startTiming = () => {
+    const startTimer = () => {
         navigation.navigate("TimerScreen");
-    };
+    }
 
     return (
         <View style={styles.container}>
             <Text>Hello</Text>
             {renderActivities()}
             <Button onPress={addActivity} title="+" />
-            <Button onPress={startTiming} title=">" />
+            <Button onPress={startTimer} title=">" />
             <StatusBar style="auto" />
         </View>
     );

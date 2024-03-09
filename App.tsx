@@ -24,10 +24,10 @@ type RootStackParamList = {
     SummaryScreen: undefined;
 };
 
-const Stack = createNativeStackNavigator<RootStackParamList>();
-
 export default function App() {
     const [activities, setActivities] = useState<Activity[]>([]);
+
+    const Stack = createNativeStackNavigator<RootStackParamList>();
 
     return (
         <NavigationContainer>
@@ -44,7 +44,6 @@ export default function App() {
                     {() => (
                         <TimerScreen
                             activities={activities}
-                            setActivities={setActivities}
                         />
                     )}
                 </Stack.Screen>
