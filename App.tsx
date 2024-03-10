@@ -1,13 +1,18 @@
 import { StatusBar } from "expo-status-bar";
-import { useState } from "react";
+import { createRef, useState } from "react";
 import {
+    Button,
     NativeSyntheticEvent,
     StyleSheet,
     TextInput,
     TextInputChangeEventData,
 } from "react-native";
 import { produce } from "immer";
-import { NavigationContainer } from "@react-navigation/native";
+import {
+    createNavigationContainerRef,
+    NavigationContainer,
+    NavigationContainerRef,
+} from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import SetupScreen from "./Screens/SetupScreen";
 import SummaryScreen from "./Screens/SummaryScreen";
@@ -28,9 +33,19 @@ export default function App() {
     const [activities, setActivities] = useState<Activity[]>([]);
 
     const Stack = createNativeStackNavigator<RootStackParamList>();
+    
+    // created for test purposes 
+    const navigationRef = createNavigationContainerRef<RootStackParamList>();
+
+    // created for test purposes
+    const navigate = (name: keyof RootStackParamList, params?: any) => {
+        if (navigationRef.isReady()) {
+            navigationRef.navigate(name);
+        }
+    }
 
     return (
-        <NavigationContainer>
+        <NavigationContainer ref={navigationRef}>
             <Stack.Navigator>
                 <Stack.Screen name={"SetupScreen"}>
                     {() => (
@@ -41,21 +56,13 @@ export default function App() {
                     )}
                 </Stack.Screen>
                 <Stack.Screen name={"TimerScreen"}>
-                    {() => (
-                        <TimerScreen
-                            activities={activities}
-                        />
-                    )}
+                    {() => <TimerScreen activities={activities} />}
                 </Stack.Screen>
                 <Stack.Screen name={"SummaryScreen"}>
-                    {() => (
-                        <SummaryScreen
-                            activities={activities}
-                            setActivities={setActivities}
-                        />
-                    )}
+                    {() => <SummaryScreen activities={activities} />}
                 </Stack.Screen>
             </Stack.Navigator>
+            <Button onPress={() => navigate("TimerScreen")} title="test" />
         </NavigationContainer>
     );
 }

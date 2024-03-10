@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Text, View } from "react-native";
 import { Activity } from "./SetupScreen";
 
 type TimerProps = {
@@ -31,7 +32,7 @@ const TimerScreen = ({ activities }: TimerProps) => {
         // navigate to summary page 
     }
 
-    return <div></div>;
+    return <View><Text>Hello</Text></View>;
 };
 
 export default TimerScreen;
