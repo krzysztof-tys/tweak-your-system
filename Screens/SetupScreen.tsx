@@ -12,15 +12,16 @@ import {
     TextInputChangeEventData,
     View,
 } from "react-native";
-import { Activity } from "../types";
+import { Activity, SCREEN } from "../types";
 
 type ScreenProps = {
-    activities: Activity[],
-    setActivities: React.Dispatch<React.SetStateAction<Activity[]>>,
-}
+    activities: Activity[];
+    setActivities: React.Dispatch<React.SetStateAction<Activity[]>>;
+};
 
-const SetupScreen = ({activities, setActivities}: ScreenProps) => {
-    const navigation = useNavigation<NativeStackNavigationProp<ParamListBase>>();
+const SetupScreen = ({ activities, setActivities }: ScreenProps) => {
+    const navigation =
+        useNavigation<NativeStackNavigationProp<ParamListBase>>();
     const [nextId, setNextId] = useState(3);
 
     const addActivity = () => {
@@ -32,7 +33,10 @@ const SetupScreen = ({activities, setActivities}: ScreenProps) => {
         setNextId(nextId + 1);
     };
 
-    const changeActivity = (activity:Activity, event: NativeSyntheticEvent<TextInputChangeEventData>) => {
+    const changeActivity = (
+        activity: Activity,
+        event: NativeSyntheticEvent<TextInputChangeEventData>
+    ) => {
         const nextActivities = produce(activities, (draftActivities) => {
             const index = draftActivities.findIndex(
                 (draftActivity) => draftActivity.id === activity.id
@@ -60,8 +64,8 @@ const SetupScreen = ({activities, setActivities}: ScreenProps) => {
     };
 
     const startTimer = () => {
-        navigation.navigate("TimerScreen");
-    }
+        navigation.navigate(SCREEN.TimerScreen);
+    };
 
     return (
         <View style={styles.container}>

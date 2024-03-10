@@ -3,7 +3,7 @@ import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { produce } from "immer";
 import { useEffect, useState } from "react";
 import { Text, View } from "react-native";
-import { Activity, Record } from "../types";
+import { Activity, Record, SCREEN } from "../types";
 
 type TimerProps = {
     activities: Activity[];
@@ -12,8 +12,10 @@ type TimerProps = {
 };
 
 const TimerScreen = ({ activities, records, setRecords }: TimerProps) => {
-    const navigation = useNavigation<NativeStackNavigationProp<ParamListBase>>();
-    const [currentActivityIndex, setCurrentActivityIndex] = useState<number>(-1);
+    const navigation =
+        useNavigation<NativeStackNavigationProp<ParamListBase>>();
+    const [currentActivityIndex, setCurrentActivityIndex] =
+        useState<number>(-1);
 
     useEffect(() => {
         if (currentActivityIndex !== null) {
@@ -47,7 +49,7 @@ const TimerScreen = ({ activities, records, setRecords }: TimerProps) => {
             (record) => record.activity.id === activity.id
         );
 
-        if(record == null || record == undefined) {
+        if (record == null || record == undefined) {
             throw Error("Something went wrong while stopping activity");
         }
 
@@ -71,7 +73,7 @@ const TimerScreen = ({ activities, records, setRecords }: TimerProps) => {
     const finishTiming = () => {
         stopTimerForActivity(activities[currentActivityIndex]);
         setCurrentActivityIndex(-1);
-        navigation.navigate("SummaryScreen");
+        navigation.navigate(SCREEN.SummaryScreen);
     };
 
     return (

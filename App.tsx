@@ -17,7 +17,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import SetupScreen from "./Screens/SetupScreen";
 import SummaryScreen from "./Screens/SummaryScreen";
 import TimerScreen from "./Screens/TimerScreen";
-import { Activity, Record, RootStackParamList } from "./types";
+import { Activity, Record, RootStackParamList, SCREEN } from "./types";
 
 export default function App() {
     const [activities, setActivities] = useState<Activity[]>([]);
@@ -38,7 +38,7 @@ export default function App() {
     return (
         <NavigationContainer ref={navigationRef}>
             <Stack.Navigator>
-                <Stack.Screen name={"SetupScreen"}>
+                <Stack.Screen name={SCREEN.SetupScreen}>
                     {() => (
                         <SetupScreen
                             activities={activities}
@@ -46,7 +46,7 @@ export default function App() {
                         />
                     )}
                 </Stack.Screen>
-                <Stack.Screen name={"TimerScreen"}>
+                <Stack.Screen name={SCREEN.TimerScreen}>
                     {() => (
                         <TimerScreen
                             activities={activities}
@@ -55,11 +55,14 @@ export default function App() {
                         />
                     )}
                 </Stack.Screen>
-                <Stack.Screen name={"SummaryScreen"}>
+                <Stack.Screen name={SCREEN.SummaryScreen}>
                     {() => <SummaryScreen activities={activities} />}
                 </Stack.Screen>
             </Stack.Navigator>
-            <Button onPress={() => navigate("TimerScreen")} title="test" />
+            <Button
+                onPress={() => navigate(SCREEN.SummaryScreen)}
+                title="test"
+            />
         </NavigationContainer>
     );
 }

@@ -1,4 +1,3 @@
-
 // todo create class
 export type Activity = {
     id: number;
@@ -7,14 +6,19 @@ export type Activity = {
 
 // todo create class
 export type Record = {
-    activity: Activity,
-    startDate?: number,
-    endDate?: number,
+    activity: Activity;
+    startDate?: number;
+    endDate?: number;
 };
+
+export const SCREEN = {
+    SetupScreen: "SetupScreen",
+    TimerScreen: "TimerScreen",
+    SummaryScreen: "SummaryScreen",
+} as const;
 
 export type RootStackParamList = {
-    SetupScreen: undefined;
-    TimerScreen: undefined;
-    SummaryScreen: undefined;
+    [SCREEN.SetupScreen]: undefined;
+    [SCREEN.TimerScreen]: undefined;
+    [SCREEN.SummaryScreen]: undefined;
 };
-
