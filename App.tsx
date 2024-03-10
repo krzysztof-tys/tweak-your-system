@@ -24,8 +24,8 @@ export default function App() {
     const [records, setRecords] = useState<Record[]>([]);
 
     const Stack = createNativeStackNavigator<RootStackParamList>();
-    
-    // created for test purposes 
+
+    // created for test purposes
     const navigationRef = createNavigationContainerRef<RootStackParamList>();
 
     // created for test purposes
@@ -33,7 +33,7 @@ export default function App() {
         if (navigationRef.isReady()) {
             navigationRef.navigate(name);
         }
-    }
+    };
 
     return (
         <NavigationContainer ref={navigationRef}>
@@ -47,7 +47,13 @@ export default function App() {
                     )}
                 </Stack.Screen>
                 <Stack.Screen name={"TimerScreen"}>
-                    {() => <TimerScreen activities={activities} records={records} setRecords={setRecords} />}
+                    {() => (
+                        <TimerScreen
+                            activities={activities}
+                            records={records}
+                            setRecords={setRecords}
+                        />
+                    )}
                 </Stack.Screen>
                 <Stack.Screen name={"SummaryScreen"}>
                     {() => <SummaryScreen activities={activities} />}
