@@ -12,11 +12,7 @@ import {
     TextInputChangeEventData,
     View,
 } from "react-native";
-
-export type Activity = {
-    id: number,
-    name?: string,
-}
+import { Activity } from "../types";
 
 type ScreenProps = {
     activities: Activity[],

@@ -17,20 +17,11 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import SetupScreen from "./Screens/SetupScreen";
 import SummaryScreen from "./Screens/SummaryScreen";
 import TimerScreen from "./Screens/TimerScreen";
-
-type Activity = {
-    id: number;
-    name?: string;
-};
-
-type RootStackParamList = {
-    SetupScreen: undefined;
-    TimerScreen: undefined;
-    SummaryScreen: undefined;
-};
+import { Activity, Record, RootStackParamList } from "./types";
 
 export default function App() {
     const [activities, setActivities] = useState<Activity[]>([]);
+    const [records, setRecords] = useState<Record[]>([]);
 
     const Stack = createNativeStackNavigator<RootStackParamList>();
     
@@ -56,7 +47,7 @@ export default function App() {
                     )}
                 </Stack.Screen>
                 <Stack.Screen name={"TimerScreen"}>
-                    {() => <TimerScreen activities={activities} />}
+                    {() => <TimerScreen activities={activities} records={records} setRecords={setRecords} />}
                 </Stack.Screen>
                 <Stack.Screen name={"SummaryScreen"}>
                     {() => <SummaryScreen activities={activities} />}
