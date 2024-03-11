@@ -12,10 +12,8 @@ type TimerProps = {
 };
 
 const TimerScreen = ({ activities, records, setRecords }: TimerProps) => {
-    const navigation =
-        useNavigation<NativeStackNavigationProp<ParamListBase>>();
-    const [currentActivityIndex, setCurrentActivityIndex] =
-        useState<number>(-1);
+    const navigation = useNavigation<NativeStackNavigationProp<ParamListBase>>();
+    const [currentActivityIndex, setCurrentActivityIndex] = useState<number>(-1);
 
     useEffect(() => {
         if (currentActivityIndex !== null) {
@@ -45,9 +43,7 @@ const TimerScreen = ({ activities, records, setRecords }: TimerProps) => {
     };
 
     const stopTimerForActivity = (activity: Activity): void => {
-        const record = records.find(
-            (record) => record.activity.id === activity.id
-        );
+        const record = records.find((record) => record.activity.id === activity.id);
 
         if (record == null || record == undefined) {
             throw Error("Something went wrong while stopping activity");
