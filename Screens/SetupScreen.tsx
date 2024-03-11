@@ -1,8 +1,8 @@
-import { ParamListBase, useNavigation } from "@react-navigation/native";
-import { NativeStackNavigationProp } from "@react-navigation/native-stack";
-import { StatusBar } from "expo-status-bar";
-import { produce } from "immer";
-import { useState } from "react";
+import { ParamListBase, useNavigation } from '@react-navigation/native';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { StatusBar } from 'expo-status-bar';
+import { produce } from 'immer';
+import { useState } from 'react';
 import {
     Button,
     NativeSyntheticEvent,
@@ -11,8 +11,9 @@ import {
     TextInput,
     TextInputChangeEventData,
     View,
-} from "react-native";
-import { Activity, SCREEN } from "../types";
+} from 'react-native';
+import { Activity, SCREEN } from '../types';
+import { styles } from './style';
 
 type ScreenProps = {
     activities: Activity[];
@@ -20,7 +21,8 @@ type ScreenProps = {
 };
 
 const SetupScreen = ({ activities, setActivities }: ScreenProps) => {
-    const navigation = useNavigation<NativeStackNavigationProp<ParamListBase>>();
+    const navigation =
+        useNavigation<NativeStackNavigationProp<ParamListBase>>();
     const [nextId, setNextId] = useState(3);
 
     const addActivity = () => {
@@ -32,9 +34,14 @@ const SetupScreen = ({ activities, setActivities }: ScreenProps) => {
         setNextId(nextId + 1);
     };
 
-    const changeActivity = (activity: Activity, event: NativeSyntheticEvent<TextInputChangeEventData>) => {
+    const changeActivity = (
+        activity: Activity,
+        event: NativeSyntheticEvent<TextInputChangeEventData>
+    ) => {
         const nextActivities = produce(activities, (draftActivities) => {
-            const index = draftActivities.findIndex((draftActivity) => draftActivity.id === activity.id);
+            const index = draftActivities.findIndex(
+                (draftActivity) => draftActivity.id === activity.id
+            );
 
             draftActivities[index].name = event.nativeEvent.text;
         });
@@ -71,14 +78,5 @@ const SetupScreen = ({ activities, setActivities }: ScreenProps) => {
         </View>
     );
 };
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: "#fff",
-        alignItems: "center",
-        justifyContent: "center",
-    },
-});
 
 export default SetupScreen;

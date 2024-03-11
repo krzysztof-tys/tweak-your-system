@@ -1,9 +1,11 @@
-import { ParamListBase, useNavigation } from "@react-navigation/native";
-import { NativeStackNavigationProp } from "@react-navigation/native-stack";
-import { produce } from "immer";
-import { useEffect, useState } from "react";
-import { Text, View } from "react-native";
-import { Activity, Record, SCREEN } from "../types";
+import { ParamListBase, useNavigation } from '@react-navigation/native';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { produce } from 'immer';
+import { useEffect, useState } from 'react';
+import { Button, Text, View } from 'react-native';
+import Timer from '../Components/Timer';
+import { Activity, Record, SCREEN } from '../types';
+import { styles } from './style';
 
 type TimerProps = {
     activities: Activity[];
@@ -12,8 +14,10 @@ type TimerProps = {
 };
 
 const TimerScreen = ({ activities, records, setRecords }: TimerProps) => {
-    const navigation = useNavigation<NativeStackNavigationProp<ParamListBase>>();
-    const [currentActivityIndex, setCurrentActivityIndex] = useState<number>(-1);
+    const navigation =
+        useNavigation<NativeStackNavigationProp<ParamListBase>>();
+    const [currentActivityIndex, setCurrentActivityIndex] =
+        useState<number>(-1);
 
     useEffect(() => {
         if (currentActivityIndex !== null) {
@@ -22,6 +26,12 @@ const TimerScreen = ({ activities, records, setRecords }: TimerProps) => {
 
         startTimer();
     }, []);
+
+    const startTimer = () => {
+        const firstActivity = activities[0];
+        createAndStartRecord(firstActivity);
+        setCurrentActivityIndex(0);
+    };
 
     const createAndStartRecord = (activity: Activity): void => {
         const newRecord = {
@@ -36,17 +46,13 @@ const TimerScreen = ({ activities, records, setRecords }: TimerProps) => {
         );
     };
 
-    const startTimer = () => {
-        const firstActivity = activities[0];
-        createAndStartRecord(firstActivity);
-        setCurrentActivityIndex(0);
-    };
-
     const stopTimerForActivity = (activity: Activity): void => {
-        const record = records.find((record) => record.activity.id === activity.id);
+        const record = records.find(
+            (record) => record.activity.id === activity.id
+        );
 
         if (record == null || record == undefined) {
-            throw Error("Something went wrong while stopping activity");
+            throw Error('Something went wrong while stopping activity');
         }
 
         record.endDate = Date.now();
@@ -72,9 +78,19 @@ const TimerScreen = ({ activities, records, setRecords }: TimerProps) => {
         navigation.navigate(SCREEN.SummaryScreen);
     };
 
+    const isLast = () => currentActivityIndex == activities.length - 1;
+
     return (
-        <View>
-            <Text>Hello</Text>
+        <View style={styles.container}>
+            <Text>Current Activity name</Text>
+            {records.length > 0 && (
+                <Timer record={records[records.length - 1]} />
+            )}
+            <Button
+                onPress={isLast() ? finishTiming : nextActivity}
+                title=">"
+            />
+            <Text>NextActivityName</Text>
         </View>
     );
 };
