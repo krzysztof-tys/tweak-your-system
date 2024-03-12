@@ -10,6 +10,8 @@ Friction free, one button life tracker &amp; planning tool to set systems instea
 
 ## 📜 Origin
 
+> For more info check out `TweakYourSystem-readme.docx` file in the `docs` folder
+
 The project originates in my nerdy desire for overly specified statistics on my life mixed with ridiculus requirements no app could fulfill.
 
 It's a mixture of various ideas and inspirations. 
