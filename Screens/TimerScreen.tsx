@@ -73,7 +73,6 @@ const TimerScreen = ({ activities, records, setRecords }: TimerProps) => {
     };
 
     const nextActivity = () => {
-        debugger;
         const tempIndex = currentActivityIndex + 1;
 
         let newRecords = stopTimerForActivity(
@@ -81,9 +80,9 @@ const TimerScreen = ({ activities, records, setRecords }: TimerProps) => {
             activities[currentActivityIndex]
         );
         newRecords = createAndStartRecord(newRecords, activities[tempIndex]);
-        setCurrentActivityIndex(tempIndex);
 
         setRecords(newRecords);
+        setCurrentActivityIndex(tempIndex);
     };
 
     const finishTiming = () => {
