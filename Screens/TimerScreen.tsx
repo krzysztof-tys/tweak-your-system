@@ -35,53 +35,65 @@ const TimerScreen = ({ activities, records, setRecords }: TimerProps) => {
 
     const startTimer = () => {
         const firstActivity = activities[0];
-        createAndStartRecord(firstActivity);
+        const newRecords = createAndStartRecord(records, firstActivity);
+
         setCurrentActivityIndex(0);
+        setRecords(newRecords);
     };
 
-    const createAndStartRecord = (activity: Activity): void => {
+    const createAndStartRecord = (
+        records: Record[],
+        activity: Activity
+    ): Record[] => {
         const newRecord = {
             activity: activity,
             startDate: Date.now(),
         };
 
-        console.log(JSON.stringify(newRecord));
-
-        setRecords(
-            produce(records, (draft) => {
-                draft.push(newRecord);
-            })
-        );
+        return produce(records, (draft) => {
+            draft.push(newRecord);
+        });
     };
 
-    const stopTimerForActivity = (activity: Activity): void => {
-        const record = records.find(
+    const stopTimerForActivity = (records: Record[], activity: Activity) => {
+        const recordIndex = records.findIndex(
             (record) => record.activity.id === activity.id
         );
 
-        if (record == null || record == undefined) {
+        if (recordIndex === -1) {
+            console.log(JSON.stringify(activity));
             throw Error('Something went wrong while stopping activity');
         }
 
-        record.endDate = Date.now();
+        const newRecords = produce(records, (draft) => {
+            draft[recordIndex].endDate = Date.now();
+        });
+
+        return newRecords;
     };
 
     const nextActivity = () => {
-        if (isLastActivity) {
-            finishTiming();
-            return;
-        }
-
+        debugger;
         const tempIndex = currentActivityIndex + 1;
 
-        stopTimerForActivity(activities[currentActivityIndex]);
-        createAndStartRecord(activities[tempIndex]);
+        let newRecords = stopTimerForActivity(
+            records,
+            activities[currentActivityIndex]
+        );
+        newRecords = createAndStartRecord(newRecords, activities[tempIndex]);
         setCurrentActivityIndex(tempIndex);
+
+        setRecords(newRecords);
     };
 
     const finishTiming = () => {
-        stopTimerForActivity(activities[currentActivityIndex]);
+        const newRecords = stopTimerForActivity(
+            records,
+            activities[currentActivityIndex]
+        );
         setCurrentActivityIndex(-1);
+        setRecords(newRecords);
+
         navigation.navigate(SCREEN.SummaryScreen);
     };
 

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Text } from 'react-native';
 import { Record } from '../Common/types';
+import { formatTime } from '../Services/time';
 
 type TimerProps = {
     record: Record;
@@ -9,9 +10,6 @@ type TimerProps = {
 const Timer = ({ record }: TimerProps) => {
     const [timePassed, setTimePassed] = useState<Date>();
 
-    const formatTime = (date: Date): string =>
-        `${date.getMinutes()}:${date.getSeconds()}:${date.getMilliseconds()}`;
-
     useEffect(() => {
         let intervalId = setInterval(() => {
             if (!record.startDate) {
@@ -19,10 +17,9 @@ const Timer = ({ record }: TimerProps) => {
             }
 
             const delta = Date.now() - record.startDate;
-            console.log(delta + ' ' + JSON.stringify(record));
 
             setTimePassed(new Date(delta));
-        }, 90);
+        }, 75);
 
         return () => clearInterval(intervalId);
     }, [record]);
