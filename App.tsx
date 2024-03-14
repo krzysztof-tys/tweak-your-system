@@ -17,7 +17,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import SetupScreen from './Screens/SetupScreen';
 import SummaryScreen from './Screens/SummaryScreen';
 import TimerScreen from './Screens/TimerScreen';
-import { Activity, Record, RootStackParamList, SCREEN } from './types';
+import { Activity, Record, RootStackParamList, SCREEN } from './Common/types';
 
 export default function App() {
     const [activities, setActivities] = useState<Activity[]>([]);

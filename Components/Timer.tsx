@@ -1,17 +1,33 @@
+import { useEffect, useState } from 'react';
 import { Text } from 'react-native';
-import { Record } from '../types';
+import { Record } from '../Common/types';
 
 type TimerProps = {
     record: Record;
 };
 
 const Timer = ({ record }: TimerProps) => {
-    if (record.startDate == null) {
-        throw Error('trying to time not started record');
-    }
+    const [timePassed, setTimePassed] = useState<Date>();
 
-    const delta = Date.now() - record.startDate;
-    return <Text>{}</Text>;
+    const formatTime = (date: Date): string =>
+        `${date.getMinutes()}:${date.getSeconds()}:${date.getMilliseconds()}`;
+
+    useEffect(() => {
+        let intervalId = setInterval(() => {
+            if (!record.startDate) {
+                throw Error();
+            }
+
+            const delta = Date.now() - record.startDate;
+            console.log(delta + ' ' + JSON.stringify(record));
+
+            setTimePassed(new Date(delta));
+        }, 90);
+
+        return () => clearInterval(intervalId);
+    }, [record]);
+
+    return <Text>{timePassed && formatTime(timePassed)}</Text>;
 };
 
 export default Timer;

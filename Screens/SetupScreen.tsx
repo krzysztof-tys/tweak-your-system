@@ -12,8 +12,8 @@ import {
     TextInputChangeEventData,
     View,
 } from 'react-native';
-import { Activity, SCREEN } from '../types';
-import { styles } from './style';
+import { Activity, SCREEN } from '../Common/types';
+import { styles } from '../Common/style';
 
 type ScreenProps = {
     activities: Activity[];

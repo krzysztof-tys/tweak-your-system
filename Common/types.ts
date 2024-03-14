@@ -12,9 +12,9 @@ export type Record = {
 };
 
 export const SCREEN = {
-    SetupScreen: "SetupScreen",
-    TimerScreen: "TimerScreen",
-    SummaryScreen: "SummaryScreen",
+    SetupScreen: 'SetupScreen',
+    TimerScreen: 'TimerScreen',
+    SummaryScreen: 'SummaryScreen',
 } as const;
 
 export type RootStackParamList = {

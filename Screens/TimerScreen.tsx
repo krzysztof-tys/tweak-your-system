@@ -4,8 +4,8 @@ import { produce } from 'immer';
 import { useEffect, useState } from 'react';
 import { Button, Text, View } from 'react-native';
 import Timer from '../Components/Timer';
-import { Activity, Record, SCREEN } from '../types';
-import { styles } from './style';
+import { Activity, Record, SCREEN } from '../Common/types';
+import { styles } from '../Common/style';
 
 type TimerProps = {
     activities: Activity[];
@@ -13,14 +13,20 @@ type TimerProps = {
     setRecords: React.Dispatch<React.SetStateAction<Record[]>>;
 };
 
+const NO_ACTIVITY = -1;
+
 const TimerScreen = ({ activities, records, setRecords }: TimerProps) => {
     const navigation =
         useNavigation<NativeStackNavigationProp<ParamListBase>>();
+
     const [currentActivityIndex, setCurrentActivityIndex] =
-        useState<number>(-1);
+        useState<number>(NO_ACTIVITY);
+
+    const currentRecord = records[records.length - 1];
+    const isLastActivity = currentActivityIndex == activities.length - 1;
 
     useEffect(() => {
-        if (currentActivityIndex !== null) {
+        if (currentActivityIndex !== -1) {
             return;
         }
 
@@ -38,6 +44,8 @@ const TimerScreen = ({ activities, records, setRecords }: TimerProps) => {
             activity: activity,
             startDate: Date.now(),
         };
+
+        console.log(JSON.stringify(newRecord));
 
         setRecords(
             produce(records, (draft) => {
@@ -59,7 +67,6 @@ const TimerScreen = ({ activities, records, setRecords }: TimerProps) => {
     };
 
     const nextActivity = () => {
-        const isLastActivity = currentActivityIndex == activities.length - 1;
         if (isLastActivity) {
             finishTiming();
             return;
@@ -82,15 +89,20 @@ const TimerScreen = ({ activities, records, setRecords }: TimerProps) => {
 
     return (
         <View style={styles.container}>
-            <Text>Current Activity name</Text>
-            {records.length > 0 && (
-                <Timer record={records[records.length - 1]} />
-            )}
+            <Text>
+                {currentActivityIndex !== NO_ACTIVITY &&
+                    activities[currentActivityIndex].name}
+            </Text>
+            {records.length > 0 && <Timer record={currentRecord} />}
             <Button
                 onPress={isLast() ? finishTiming : nextActivity}
                 title=">"
             />
-            <Text>NextActivityName</Text>
+            <Text>
+                {currentActivityIndex !== NO_ACTIVITY &&
+                    !isLastActivity &&
+                    activities[currentActivityIndex + 1].name}
+            </Text>
         </View>
     );
 };

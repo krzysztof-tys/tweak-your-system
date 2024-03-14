@@ -1,6 +1,6 @@
 import { Text, View } from 'react-native';
-import { Record } from '../types';
-import { styles } from './style';
+import { Record } from '../Common/types';
+import { styles } from '../Common/style';
 
 type SummaryProps = {
     records: Record[];
