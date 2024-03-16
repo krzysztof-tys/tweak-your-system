@@ -77,10 +77,22 @@ Then you can focus on one area, set goals and track progress.
 
 More scribbles in `docs/` folder
 
-## ⭐ Sounds good?
+## ⭐ Didn't get a thing?
 
-If you find this project helpful, insightful, informative, valuable, engaging or interesting consider showing your appreciation by giving it a star! Your support means a world to me. Thank you! 🔥
+Yeah, I know, the readme is quite chaotic. I'll clear that up, I want to focus on some coding for now.
 
-## 🆘 Help wanted!
+But hey! 
 
-If you'd like to contribute to the project in any way you can contact me through [linkedin](https://www.linkedin.com/in/ktys/) or create an issue. As soon as the project gets in usable shape I will update readme with instructions on how to run the app. It would be awesome if you could try it out even for 5 minutes and let me know what do you think!
+If you find this project in any way helpful, insightful, informative, valuable, engaging or interesting consider showing your appreciation by giving it a star! Your support means a world to me. Thank you! 🔥
+
+## 💃🕺 Wanna join?
+
+Besides the dream of a perfect todo app, this projects serves a purpose of learning mobile app development. Let me know if you want to join me on that journey (wether or not you have any experience). I could use some help with:
+
+- coding (react-native, android or ios; I have some crazy ideas for native components)
+- design
+- marketing and copywriting 
+- testing (both automatic and just using the app)
+- anything else you'd like to do
+
+You can find me on [LinkedIn](https://www.linkedin.com/in/krzysztof-tys/).
