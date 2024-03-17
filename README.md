@@ -90,10 +90,11 @@ If you find this project in any way helpful, insightful, informative, valuable, 
 Besides the dream of a perfect todo app, this projects serves a purpose of learning mobile app development. Let me know if you want to join me on that journey (wether or not you have any experience). I could use some help with:
 
 - coding (react-native, android or ios; I have some crazy ideas for native components)
-- design
+- graphic design
 - marketing and copywriting 
 - testing (both automatic and just using the app)
 - anything else you'd like to do
+- designing features and functionalities
 
 You can find me on [LinkedIn](https://www.linkedin.com/in/krzysztof-tys/).
 
