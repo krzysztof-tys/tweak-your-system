@@ -91,6 +91,10 @@ Sure, let's compare React Native SQLite and Realm, highlighting their advantages
 - Applications needing offline support with seamless data synchronization when the device comes online.
 - Cross-platform applications where sharing database code across different platforms is essential.
 
+**Additional info**
+
+The features highlighted on Realm's front page are indeed reflective of its capabilities in reality, not just marketing slogans. Realm is known for being fast, lightweight, and efficient, making it a popular alternative to SQLite. Its lazy loading and zero-copy architecture enable developers to build data-rich apps without draining device resources. Additionally, Realm's object-oriented data model allows developers to work directly with native objects, eliminating the need for ORMs or DAOs, which simplifies the development process. Moreover, the built-in mobile to cloud sync feature of Realm facilitates real-time synchronization of data between mobile devices and the cloud, making it easy to create interactive features that keep data up-to-date across multiple devices and users. These features contribute to Realm's reputation for being a practical and effective tool for app development, beyond mere marketing claims.
+
 **Conclusion:**
 
 Both React Native SQLite and Realm have their strengths and weaknesses, and the choice between them depends on factors such as data synchronization requirements, querying complexity, development expertise, and platform considerations. SQLite is well-suited for applications requiring complex querying and local data storage, while Realm excels in real-time synchronization and cross-platform support. Developers should evaluate their specific use case and requirements to determine which database solution best fits their needs.
