@@ -26,7 +26,7 @@ const TimerScreen = ({ activities, records, setRecords }: TimerProps) => {
     const isLastActivity = currentActivityIndex == activities.length - 1;
 
     useEffect(() => {
-        if (currentActivityIndex !== -1) {
+        if (currentActivityIndex !== NO_ACTIVITY) {
             return;
         }
 

@@ -1,6 +1,6 @@
 import Realm, { BSON, ObjectSchema } from 'realm';
 
-export class Action extends Realm.Object<Action> {
+class Action extends Realm.Object<Action> {
     _id!: BSON.ObjectID;
     name!: string;
 
@@ -14,7 +14,7 @@ export class Action extends Realm.Object<Action> {
     };
 }
 
-export class Record extends Realm.Object<Record> {
+class Record extends Realm.Object<Record> {
     _id!: BSON.ObjectID;
     dateStarted?: Date;
     dateEnded?: Date;
@@ -29,3 +29,5 @@ export class Record extends Realm.Object<Record> {
         primaryKey: '_id',
     };
 }
+
+export { Action, Record };
