@@ -1,5 +1,4 @@
 import Realm, { BSON, ObjectSchema } from 'realm';
-
 class Action extends Realm.Object<Action> {
     _id!: BSON.ObjectID;
     name!: string;
@@ -16,6 +15,7 @@ class Action extends Realm.Object<Action> {
 
 class Record extends Realm.Object<Record> {
     _id!: BSON.ObjectID;
+    action!: Action;
     dateStarted?: Date;
     dateEnded?: Date;
 
@@ -23,6 +23,7 @@ class Record extends Realm.Object<Record> {
         name: 'Record',
         properties: {
             _id: 'objectId',
+            action: 'Action',
             dateStarted: 'date?',
             dateEnded: 'date?',
         },

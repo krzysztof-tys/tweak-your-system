@@ -10,7 +10,7 @@ import SummaryScreen from './Screens/SummaryScreen';
 import TimerScreen from './Screens/TimerScreen';
 import { Activity, Record, RootStackParamList, SCREEN } from './Common/types';
 import { RealmProvider } from '@realm/react';
-import { Action, Record as RecordSchema } from './Schemas';
+import { Action, Record as RecordSchema } from './Common/Schemas';
 
 export default function App() {
     const [activities, setActivities] = useState<Activity[]>([]);

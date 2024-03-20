@@ -12,8 +12,9 @@ import {
     TextInputChangeEventData,
     View,
 } from 'react-native';
-import { Activity, SCREEN } from '../Common/types';
+import { Activity, RealmType, SCREEN } from '../Common/types';
 import { styles } from '../Common/style';
+import { useRealm } from '@realm/react';
 
 type ScreenProps = {
     activities: Activity[];
@@ -24,8 +25,14 @@ const SetupScreen = ({ activities, setActivities }: ScreenProps) => {
     const navigation =
         useNavigation<NativeStackNavigationProp<ParamListBase>>();
     const [nextId, setNextId] = useState(3);
+    const realm = useRealm();
 
     const addActivity = () => {
+        realm.write(() => {
+            realm.create(RealmType.Action, { _id: nextId });
+        });
+
+        // todo delete when realm working
         setActivities(
             produce(activities, (draft) => {
                 draft.push({ id: nextId });

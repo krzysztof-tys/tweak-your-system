@@ -22,3 +22,8 @@ export type RootStackParamList = {
     [SCREEN.TimerScreen]: undefined;
     [SCREEN.SummaryScreen]: undefined;
 };
+
+export const RealmType = {
+    Action: 'Action',
+    Record: 'Record',
+};
