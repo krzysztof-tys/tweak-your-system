@@ -17,6 +17,9 @@ be connetced to the same wifi\
 `npm start`\
 scan qr
 
+react-native resources & troubleshooting\
+https://github.com/krzysztof-tys/resources/blob/main/reactNative.md
+
 ## 📜 Origin
 
 > For more info check out `TweakYourSystem-readme.docx` file in the `docs` folder
