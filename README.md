@@ -10,11 +10,11 @@ Friction free, one button life tracker &amp; planning tool to set systems instea
 
 ## Instalation and debugging
 
-npm install
-install expo go
-login to the same account on expo cli and expo go
-be connetced to the same wifi
-npm start
+`npm install`\
+install expo go on device\
+login to the same account on expo cli and expo go\
+be connetced to the same wifi\
+`npm start`\
 scan qr
 
 ## 📜 Origin
