@@ -4,8 +4,8 @@
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "npx expo start",
-    "android": "npx expo start --android",
-    "ios": "npx expo start --ios",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
     "web": "npx expo start --web"
   },
   "dependencies": {
@@ -13,6 +13,7 @@
     "@react-navigation/native-stack": "^6.9.22",
     "@realm/react": "^0.6.2",
     "expo": "^50.0.14",
+    "expo-dev-client": "^3.3.11",
     "expo-status-bar": "~1.11.1",
     "immer": "^10.0.3",
     "react": "18.2.0",
