@@ -110,4 +110,4 @@ Besides the dream of a perfect todo app, this projects serves a purpose of learn
 
 You can find me on [LinkedIn](https://www.linkedin.com/in/krzysztof-tys/).
 
-🔥📱
+🔥📱🧠
