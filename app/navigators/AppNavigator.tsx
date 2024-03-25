@@ -9,10 +9,12 @@ import { createNativeStackNavigator, NativeStackScreenProps } from "@react-navig
 import { observer } from "mobx-react-lite"
 import React from "react"
 import { useColorScheme } from "react-native"
-import * as Screens from "app/screens"
 import Config from "../config"
 import { navigationRef, useBackButtonHandler } from "./navigationUtilities"
 import { colors } from "app/theme"
+import { SetupScreen, TimerScreen, SummaryScreen } from "../screens"
+import { Activity, type TRecord, type RootStackParamList, SCREEN, Action, Record } from "app/common"
+import { RealmProvider } from "@realm/react"
 
 /**
  * This type allows TypeScript to know what routes are defined in this navigator
@@ -45,15 +47,28 @@ export type AppStackScreenProps<T extends keyof AppStackParamList> = NativeStack
 >
 
 // Documentation: https://reactnavigation.org/docs/stack-navigator/
-const Stack = createNativeStackNavigator<AppStackParamList>()
+const Stack = createNativeStackNavigator<RootStackParamList>()
 
 const AppStack = observer(function AppStack() {
+  const [activities, setActivities] = React.useState<Activity[]>([])
+  const [records, setRecords] = React.useState<TRecord[]>([])
+
   return (
-    <Stack.Navigator screenOptions={{ headerShown: false, navigationBarColor: colors.background }}>
-      <Stack.Screen name="Welcome" component={Screens.WelcomeScreen} />
-      {/** 🔥 Your screens go here */}
-      {/* IGNITE_GENERATOR_ANCHOR_APP_STACK_SCREENS */}
-    </Stack.Navigator>
+    <React.Fragment>
+      <Stack.Navigator
+        screenOptions={{ headerShown: false, navigationBarColor: colors.background }}
+      >
+        <Stack.Screen name={SCREEN.SetupScreen}>
+          {() => <SetupScreen activities={activities} setActivities={setActivities} />}
+        </Stack.Screen>
+        <Stack.Screen name={SCREEN.TimerScreen}>
+          {() => <TimerScreen activities={activities} records={records} setRecords={setRecords} />}
+        </Stack.Screen>
+        <Stack.Screen name={SCREEN.SummaryScreen}>
+          {() => <SummaryScreen records={records} />}
+        </Stack.Screen>
+      </Stack.Navigator>
+    </React.Fragment>
   )
 })
 
@@ -66,12 +81,14 @@ export const AppNavigator = observer(function AppNavigator(props: NavigationProp
   useBackButtonHandler((routeName) => exitRoutes.includes(routeName))
 
   return (
-    <NavigationContainer
-      ref={navigationRef}
-      theme={colorScheme === "dark" ? DarkTheme : DefaultTheme}
-      {...props}
-    >
-      <AppStack />
-    </NavigationContainer>
+    <RealmProvider schema={[Action, Record]}>
+      <NavigationContainer
+        ref={navigationRef}
+        theme={colorScheme === "dark" ? DarkTheme : DefaultTheme}
+        {...props}
+      >
+        <AppStack />
+      </NavigationContainer>
+    </RealmProvider>
   )
 })
