@@ -8,14 +8,28 @@ Friction free, one button life tracker &amp; planning tool to set systems instea
 >
 > This project came to life thanks to the [100 Commits](https://100commitow.pl/) challenge.
 
-## Instalation and debugging
+## Instalation and running on virtual android device
 
-`npm install`\
-install expo go on device\
-login to the same account on expo cli and expo go\
-be connetced to the same wifi\
-`npm start`\
-scan qr
+### prerequisites:
+install android studio and create a new virtual device (android studio -> virtual device manager -> create new virtual device)
+(preferably choose pixel 4 with google play tools available)
+
+download and install nodejs (https://nodejs.org/en)
+install pnpm (or use npm if you like) (https://pnpm.io/installation)
+
+on windows:
+install java 17 on your device and add java folder (for example C:\Program Files\java\java-17) to environmental variable as JAVA_HOME
+add java bin folder to PATH
+
+in project folder create file android/local.properties and put there path to sdk folder on your devide (ex. `sdk.dir=C:\\Users\\USERNAME\\AppData\\Local\\Android\\sdk`)
+
+### running app
+`pnpm install` (or `npm install`)
+open virtual android machine via android studio
+`npx expo run:android`\
+> this will build our app and you'll be able to run it
+press `a` to run it on an android virtual device
+after app builds you'll be able to find an icon with ignite and clicking on it will open our app
 
 react-native resources & troubleshooting\
 https://github.com/krzysztof-tys/resources/blob/main/reactNative.md
