@@ -8,18 +8,6 @@ Friction free, one button life tracker &amp; planning tool to set systems instea
 >
 > This project came to life thanks to the [100 Commits](https://100commitow.pl/) challenge.
 
-## Instalation and debugging
-
-`npm install`\
-install expo go on device\
-login to the same account on expo cli and expo go\
-be connetced to the same wifi\
-`npm start`\
-scan qr
-
-react-native resources & troubleshooting\
-https://github.com/krzysztof-tys/resources/blob/main/reactNative.md
-
 ## 📜 Origin
 
 > For more info check out `TweakYourSystem-readme.docx` file in the `docs` folder
