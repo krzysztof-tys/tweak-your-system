@@ -1,12 +1,135 @@
-# Tweak Your System
+# Tweak Your System<br>Achieve your goals, build healthy habits and gain razor sharp focus
 <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
 
-Friction free, one button life tracker &amp; planning tool to set systems instead of goals.
+Effortless, one button life tracker &amp; planning tool to help you set systems for inevitable success.
 
->
-> \[!NOTE]
->
-> This project came to life thanks to the [100 Commits](https://100commitow.pl/) challenge.
+There's a long story for this. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <sub>_(TL;DR at the end)_</sub>
+
+## How it works
+
+Everything started with simple time tracking app and one question: 
+
+⏰ How to track your time with zero effort? ⏰<?No dropdowns, no buttons, not a single element that would take even a pinch of your focus.?>
+
+After years of <del>procrastination</del> contemplation we found the answer.  
+But to let you know that answer we need to take a step back.
+
+> Every minute you spend in planning saves 10 minutes in execution; this gives you a 1,000 percent Return on Energy!\
+> <i>~ Brian Tracy</i>
+
+Why do you even want to track your time? To take over control? To get better? Cause you're a freak like me and like nerdy stats on your life? Building habits? To raise performance? To get organized...
+
+It all comes down to one thing - **to have a better life**.  
+And how do you change your life in a sustainable and healthy way?  
+Do you wake up and decide from now on you will change **EVERYTHING**?  
+Well... in extreme situations - yes, but extreme change comes with extreme risks. 
+
+There's a better way to manage that.
+
+## How it works, for real this time
+
+⚔ Divide and conquer ⚔ 
+
+How do you eat an elephant? Well... you dont. Elephants are magnificent creatures. Don't eat them (unless you're in an extreme situation.) But its a figure of speech so to paint a picture I will answer: one bite at a time.
+
+Take a complex task. Let's say you want to become an actor in Hollywood 🎭
+
+Do you move next to Johny Deep and begs him every day to play with him in a movie? Well... in extreme situations it might work... but more probably you will get a restraining order. There's a better way. 
+
+1. Become an amateur actor.
+2. Go to professional acting school
+3. Become a decent actor.
+4. Go to your capital or other place where you will be able to work on multinational level. 
+5. Get recognizable.
+6. Get to know someone from Hollywood. 
+7. Be good enough so that they hire you. 
+
+Boom! Just like that! you're in Hollywood! 
+
+But wait, that's still quite complex. How do you even become an amateur actor? After going to the closest theater you will quickly get to know that you need to
+
+1. Memorize some poem(s)
+2. Memorize some text
+3. Would be good to be able to sing at least bearably. 
+4. Have good physical condition. 
+
+That's sounds more manageable already. You can just go with that. But there's a lot of steps to get to the Hollywood and if you want to get there in a reasonable time you need to get organized. 
+
+So, lets break it down even further. 
+
+To organize memorization of a poem
+
+1. Estimate time, lets say you want it in 2 weeks.
+2. Plan out learning: 20 minutes, every second day.
+3. Execute
+
+And boom! Just like that! You have the very first part of a system that will put you on a path to becoming a hollywood actor. 
+
+You see what I did there? I took a complex task, divided it in smaller parts and that parts I divided even more and more until I got small enough parts so that they're not overwhelming, I can more or less estimate their time and monitor the progress.
+
+That's ⚔ Divide and conquer ⚔  
+
+## How it works - for real real, really, no joke
+
+Let's go back to the time tracking thing ⏰ While searching for the perfect time tracker I noticed I just want to do one thing. 
+
+I just want to press **_next_** ⏭ ⏭ 
+
+I know what I'm doing. I just need to measure the time. So I took a piece of paper, wrote down my steps, started timer and marked a lap for each step. 
+
+✅ jobs done.
+
+The best code is the code not written. 
+
+But after some time I got tired with rewriting my notes to excell. And this is how first version of the app came to life.
+
+### Tweak Your System 1.0 - a timer with nameable laps
+Still need to copy paste the results to the execel so... we have second version:
+
+### Tweak Your System 2.0 - a timer with nameable laps and a history
+And you can export the history to CSV. There are couple of obvious things that timer alone lacks but more on that later. 
+
+## And this is suposed to help me get to the Hollywood? 
+No.
+
+You need to know how to get things done.  
+And you need to know it pretty darn well.  
+Worry not though! It's a **skill** that can be acquired same as learning to multiply. 
+
+There's a thousand paths for every single goal. What works for me doesn't have to work for you. There's no golden rule for achievements. There's no one right way.
+
+🔨 This application is a **a tool** to use not a tool that uses you.  
+🧠 A tool to **help you** think, not think for you.  
+🌤 A tool to get you to log out to the real life instead of gettin you addicted.
+
+🛠 A tool to:
+ - build habits
+ - set systems (create and manage projects) 
+ - track performance
+
+## How it works - the last final ultimate really last final 'how it works' part
+It's mainly what I discovered while doing my paper version and my vision for the future versions. 
+
+### The root is in the time tracking.
+You open the app, list out the steps, measure the time.
+
+What does it give you? 
+
+Focus.
+
+Dividing a task into smaller steps makes it easier to not go out of track. Additionally, the mere act of measuring the time makes you more focused. As you're aware you're measuring this one step. You will not get distracted and end up like [Hall fixing the lightbulb](https://www.youtube.com/watch?v=AbSehcT19u0). 
+
+### Do not measure everything <sub>(unless you're in an extreme situation)</sub>
+All the time tracking apps I've seen are trying to measure everything. Don't do that. Focus on one goal, maybe two. Maximum three, if you have to. Try it out for a while. See where it gets you. Continure with that. 
+
+### History 
+
+### Project Designer
+
+### We're in this together
+I will share what I know. There's going to be like 10 users of this app anyway (optimistically). I think I can handle that. 
+
+# Technicalities 
 
 ## Instalation and running on virtual android device
 
@@ -30,96 +153,8 @@ open virtual android machine via android studio
 > this will build our app and you'll be able to run it
 press `a` to run it on an android virtual device
 after app builds you'll be able to find an icon with ignite and clicking on it will open our app
+>
 
-
-## 📜 Origin
-
-> For more info check out `TweakYourSystem-readme.docx` file in the `docs` folder
-
-The project originates in my nerdy desire for overly specified statistics on my life mixed with ridiculus requirements no app could fulfill.
-
-It's a mixture of various ideas and inspirations. 
-
-### 📓 Journaling, daily notes, life tracking
-
-If you're not familiar with journaling benefits I highly recommend investigating that subject.
-
-<img src="https://em-content.zobj.net/content/2020/04/05/yt.png" width="16px" height="16px"/> Here's my favorite [journaling video](https://www.youtube.com/watch?v=dArgOrm98Bk) from struthless (⏱️10:57)\
-<img src="https://em-content.zobj.net/content/2020/04/05/yt.png" width="16px" height="16px"/> or you can check out this [video on mood tracking](https://www.youtube.com/watch?v=TA4-qQ5wEns) by Matt D'Avella (⏱️10:45).
-
-### 🔁 OODA loop
-
-John Boyd was a United States Air Force fighter pilot and military strategist who is best known for developing the OODA loop concept. He made significant contributions to the fields of military strategy and aerial combat tactics.\
-The OODA loop is a decision-making framework comprising four stages: **Observe**, **Orient**, **Decide**, and **Act**. It emphasizes agility and adaptability in rapidly changing situations.
-
-### 🌌 Create systems instead of goals idea
-
-🠮 📖 [Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](https://www.goodreads.com/book/show/40121378-atomic-habits)
-
-### 🤔 This awesome article on software development planning
-
-🠮 📖 [Zacznij dowozić zadania w czasie krótszym o połowę](https://kjendrzyca.notion.site/kjendrzyca/Zacznij-dowozi-zadania-w-czasie-kr-tszym-o-po-ow-8073e7f6a8b44bcf8168ea178fed5901)
-
-### 🕹️ One button UI
-
-I just want to hit 'next' button and have everything saved
-
-### ✍️ My scribbles
-
-<img src="https://github.com/krzysztof-tys/tweak-your-system/blob/main/docs/%5B1%5D%20overall%20draft.jpg" />
-
-## 💡 How it works
-
-### The root
-
-You start with one simple activity.
-
-The root concept is in planning - execution loop:
-
-1. Observe - Where are you, what you want to do?
-2. Orient - What are your options? What can you do?
-3. Decide - Write down steps you're going take.
-4. Act - execute. Hit 'next' and the app will timestamp every action accordingly to the plan.
-
-You plan your action in the first place to be able to just hit 'next' during execution. It has couple of benefits. 
-1. You're not distracted with writing down your action.
-2. You're getting focused on the current step and don't end up as [Hal fixing a light bulb](https://www.youtube.com/watch?v=AbSehcT19u0).
-
-### The journey
-
-When you have a repeatable activity layed out in steps you can save it as **a routine**.
-
-After you created some routines, you can plan your whole day using routines and activities.
-
-After you run some routines, you can see statistics on your activities.
-
-Then you can focus on one area, set goals and track progress. 
-
-### ✍️ My scribbles
-
-<img src="https://github.com/krzysztof-tys/tweak-your-system/blob/main/docs/%5B3%5D%20initial%20tasks.jpg" />
-
-More scribbles in `docs/` folder
-
-## ⭐ Didn't get a thing?
-
-Yeah, I know, the readme is quite chaotic. I'll clear that up, I want to focus on some coding for now.
-
-But hey! 
-
-If you find this project in any way helpful, insightful, informative, valuable, engaging or interesting consider showing your appreciation by giving it a star! Your support means a world to me. Thank you! 🔥
-
-## 💃🕺 Wanna join?
-
-Besides the dream of a perfect todo app, this projects serves a purpose of learning mobile app development. Let me know if you want to join me on that journey (wether or not you have any experience). I could use some help with:
-
-- coding (react-native, android or ios; I have some crazy ideas for native components)
-- graphic design
-- marketing and copywriting 
-- testing (both automatic and just using the app)
-- anything else you'd like to do
-- designing features and functionalities
-
-You can find me on [LinkedIn](https://www.linkedin.com/in/krzysztof-tys/).
+# Roadmap
 
 🔥📱🧠
