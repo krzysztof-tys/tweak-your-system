@@ -1,3 +1,4 @@
+import "react-native-get-random-values"
 import "@expo/metro-runtime"
 import React from "react"
 import * as SplashScreen from "expo-splash-screen"
