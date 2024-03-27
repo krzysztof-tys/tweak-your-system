@@ -158,7 +158,7 @@ No.
 
 First of all - it's not an excell sheet - it's a turbocharged timer. 
 
-Second, yes - you need to organize your life yourself. No application is able to transform your life. That's why we're building a community of awesome people that want some change, wheter it is big or small. We're building the app, sharing tips on organization and helping each other grow. 
+Second, yes - you need to organize your life yourself. No application is able to transform your life. That's why we're building a community of awesome people that want some change, wheter it is big or small. We're designing the system, sharing tips on organization and helping each other grow. 
 
 The American Society of Training and Development found that people are 65 percent likely to meet a goal after committing to another person. Their chances of success increase to 95 percent when they build in ongoing meetings with their partners to check in on their progress ([source](https://alumline.source.colostate.edu/being-held-accountable-for-your-goals/)). On the other hand Andrew Huberman says we shouldn't share our goals (prior to initiation an action toward this goal) -> [link](https://www.youtube.com/watch?v=tG-1XmWK8ms) 🤔
 
