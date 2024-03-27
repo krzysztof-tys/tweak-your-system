@@ -3,23 +3,23 @@
 
 Effortless, one button life tracker &amp; planning tool to help you set systems for inevitable success.
 
-# Current version
-0.0.2 - pen & paper 🚀 coding in progress ⏩⏩⏩
+## What is this?
+There are countless paths to every goal. What works for me doesn't have to work for you. There's no golden rule for achievements. There's no one right way.
 
-# Roadmap
-- 1.0 - a timer with nameable laps 
-- 2.0 - a timer with nameable laps and a history
-- 3.0 - save routines and rich 'laps'
-  - Save a set of 'laps' as a routine
-  - Add more options to the actions, like category,
-- 4.0 - plan your day
-- 4.5 - liquid planner - set proportions instead of exact time; plan according to expected timespan calculated from previous measurements
-- 5.0 - plan your week
-- 6.0 - project designer - expand features for the 'nameable laps'
+This app is **a tool**.
+
+🔨 A tool **to use** not a tool that uses you.  
+🧠 A tool to **help you** think, not think for you.  
+🌤 A tool to get you to log out to the real life instead of gettin you addicted.
+
+A tool to:  
+&nbsp;&nbsp;&nbsp;&nbsp;🛠 build habits  
+&nbsp;&nbsp;&nbsp;&nbsp;🛠 set systems (create and manage projects)  
+&nbsp;&nbsp;&nbsp;&nbsp;🛠 track performance  
 
 ## How it works
 
-There's a long story for this. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <sub>_(no TL;DR at the end)_</sub>
+There's a long story for this. <sub>([TL;DR somewhere in the middle](#tldr))</sub>
 
 Everything started with simple time tracking app and one question: 
 
@@ -45,7 +45,7 @@ There's a better way to manage that.
 
 ⚔ Divide and conquer ⚔ 
 
-How do you eat an elephant? Well... you dont. Elephants are magnificent creatures. Don't eat them (unless you're in an extreme situation.) But, its a figure of speech - one bite at a time.
+How do you eat an elephant? Well... you dont. Elephants are magnificent creatures. Don't eat them (unless you're in an extreme situation.) But some people say - one bite at a time.
 
 Take a complex task. Let's say you want to become an actor in Hollywood 🎭
 
@@ -84,7 +84,7 @@ You see what I did there? I took a complex task, divided it in smaller parts and
 
 That's ⚔ Divide and conquer ⚔ 
 
-## How it works - for real real, really, no joke
+## How it works - for real real
 
 Let's go back to the time tracking thing ⏰ While searching for the perfect time tracker I noticed I just want to do one thing. 
 
@@ -112,30 +112,26 @@ And you need to know it pretty darn well.
 Worry not though! It's a **skill** that can be acquired same as learning to multiply.
 
 The timer is the core of this application and will help you to keep track on your progress on getting things done.  
-For the poem example, for a learning session, it could be set up like this:
+For the poem example, for a learning session, it could be set up something like this:
 1. learn first line
 2. learn second line
 3. learn third line
 4. repeat whole
 5. ...
-With that you will be able to recognize where's room for improvement. You can identify things you didn't expect and adjust your plan. 
 
-There are countless paths to every goal. What works for me doesn't have to work for you. There's no golden rule for achievements. There's no one right way.
+With that you will be able to recognize where's room for improvement. You can identify things you didn't expect and adjust your plan. <span id="tldr">&nbsp;</span>
 
-🔨 This application is a **a tool** to use not a tool that uses you.  
-🧠 A tool to **help you** think, not think for you.  
-🌤 A tool to get you to log out to the real life instead of gettin you addicted.
-
-🛠 A tool to:
- - build habits
- - set systems (create and manage projects) 
- - track performance
-
-## How it works - the last final ultimate really last final 'how it works' part, I promise!
+## How it works - the ultimate last final final (I promise!)
 It's mainly what I discovered while doing my paper version and my vision for the future versions. 
 
-### The root lies in the time tracking.
-You open the app, list out the steps, measure the time.
+Here are the core features:
+- The one-button time tracker
+- Do not measure everything
+- History
+- Project Designer
+
+### The one-button time tracker
+It's simple: open the app, list out the steps, measure the time.
 
 What does it give you? 
 
@@ -144,7 +140,7 @@ What does it give you?
 Dividing a task into smaller steps makes it easier to not go out of track (also, the divide & conquer thing in small scale). Additionally, the mere act of measuring the time makes you more focused. As you're aware you're measuring this one step. You will not get distracted and end up like [Hall fixing the lightbulb](https://www.youtube.com/watch?v=AbSehcT19u0). 
 
 ### Do not measure everything <sub>(unless you're in an extreme situation)</sub>
-All the time tracking apps I've seen are trying to measure everything. Don't do that. Focus on one goal, maybe two. Maximum three, if you have to. Try it out for a while. See where it gets you. Continure with that. Open the app only when you need it. 
+All the time tracking apps I've seen are trying to measure everything. Don't do that. Focus on one goal, maybe two. Maximum three, if you have to. Try it out for a while. See where it gets you. Continue with that. Open the app only when you need it. 
 
 When you focus on something, you'll start noticing suprising things. When you repeat something for extended period of time your brain starts to create connections with unexpected parts of your knowledge. It's like when you repeat a word and it starts to lose its sense.
 
@@ -156,12 +152,30 @@ After some time you'll start noticing the routines you repeat. You'll want to pl
 
 To not overwhelm you with houndreds functionalities the app will unravel further features one by one as you get used to them. The ultimate goal is to have a fully customizable workbench for creating and monitoring your personal projects with the time tracker. Project Desinger will get it's own section as it is a complex module. 
 
-## So basically, you're giving me constrained excell sheet and I need to learn everything on my own?
+## So basically, it's an excell sheet and I need to learn everything on my own?
 No.
 
-First of all - it's not an excell sheet - it's a turbocharged timer.
+First of all - it's not an excell sheet - it's a turbocharged timer. 
 
-Second, with registration you get free, personal assistance to get you started. There's no one right way to use the app, so there's no in-app tutorial.
+Second, yes - you need to organize your life yourself. No application is able to transform your life. That's why we're building a community of awesome people that want some change, wheter it is big or small. We're building the app, sharing tips on organization and helping each other grow. 
+
+The American Society of Training and Development found that people are 65 percent likely to meet a goal after committing to another person. Their chances of success increase to 95 percent when they build in ongoing meetings with their partners to check in on their progress ([source](https://alumline.source.colostate.edu/being-held-accountable-for-your-goals/)). On the other hand Andrew Huberman says we shouldn't share our goals (prior to initiation an action toward this goal) -> [link](https://www.youtube.com/watch?v=tG-1XmWK8ms) 🤔
+
+Wheter or not you want to share your goals, join us and let's grow together!
+
+# Current version
+0.0.2 - pen & paper 🚀 coding in progress
+
+# Roadmap
+- 1.0 - a timer with nameable laps 
+- 2.0 - a timer with nameable laps and a history
+- 3.0 - save routines and rich 'laps'
+  - Save a set of 'laps' as a routine
+  - Add more options to the actions, like category,
+- 4.0 - plan your day
+- 4.5 - liquid planner - set proportions instead of exact time; plan according to expected timespan calculated from previous measurements
+- 5.0 - plan your week
+- 6.0 - project designer - expand features for the 'nameable laps'
 
 # Technicalities 
 
@@ -198,6 +212,7 @@ after app builds you'll be able to find an icon with ignite and clicking on it w
 - the loop
 - action
 - routine
+- project
 - project designer
 - planner
 
