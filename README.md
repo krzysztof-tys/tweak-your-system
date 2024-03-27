@@ -129,8 +129,9 @@ Here are the core features:
 - Do not measure everything
 - History
 - Project Designer
+- Planner
 
-### The one-button time tracker
+### ⏭ The one-button time tracker
 It's simple: open the app, list out the steps, measure the time.
 
 What does it give you? 
@@ -139,15 +140,15 @@ What does it give you?
 
 Dividing a task into smaller steps makes it easier to not go out of track (also, the divide & conquer thing in small scale). Additionally, the mere act of measuring the time makes you more focused. As you're aware you're measuring this one step. You will not get distracted and end up like [Hall fixing the lightbulb](https://www.youtube.com/watch?v=AbSehcT19u0). 
 
-### Do not measure everything <sub>(unless you're in an extreme situation)</sub>
+### 📐 Do not measure everything <sub>(unless you're in an extreme situation)</sub>
 All the time tracking apps I've seen are trying to measure everything. Don't do that. Focus on one goal, maybe two. Maximum three, if you have to. Try it out for a while. See where it gets you. Continue with that. Open the app only when you need it. 
 
 When you focus on something, you'll start noticing suprising things. When you repeat something for extended period of time your brain starts to create connections with unexpected parts of your knowledge. It's like when you repeat a word and it starts to lose its sense.
 
-### History 
+### 🧾 History 
 You cannot improve what you do not measure. Analyze your history, draw conclusions, try out different things and see how it impacts your timing.  
 
-### Project Designer
+### 🏛 Project Designer and Planner 
 After some time you'll start noticing the routines you repeat. You'll want to plan your day, your week or even your year. You'll want to add notes to your measurements.
 
 To not overwhelm you with houndreds functionalities the app will unravel further features one by one as you get used to them. The ultimate goal is to have a fully customizable workbench for creating and monitoring your personal projects with the time tracker. Project Desinger will get it's own section as it is a complex module. 
