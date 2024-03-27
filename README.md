@@ -140,7 +140,7 @@ What does it give you?
 
 Dividing a task into smaller steps makes it easier to not go out of track (also, the divide & conquer thing in small scale). Additionally, the mere act of measuring the time makes you more focused. As you're aware you're measuring this one step. You will not get distracted and end up like [Hall fixing the lightbulb](https://www.youtube.com/watch?v=AbSehcT19u0). 
 
-### 📐 Do not measure everything <sub>(unless you're in an extreme situation)</sub>
+### 📐 Do not measure everything
 All the time tracking apps I've seen are trying to measure everything. Don't do that. Focus on one goal, maybe two. Maximum three, if you have to. Try it out for a while. See where it gets you. Continue with that. Open the app only when you need it. 
 
 When you focus on something, you'll start noticing suprising things. When you repeat something for extended period of time your brain starts to create connections with unexpected parts of your knowledge. It's like when you repeat a word and it starts to lose its sense.
