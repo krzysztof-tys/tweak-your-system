@@ -45,7 +45,7 @@ There's a better way to manage that.
 
 ⚔ Divide and conquer ⚔ 
 
-How do you eat an elephant? Well... you dont. Elephants are magnificent creatures. Don't eat them (unless you're in an extreme situation.) But its a figure of speech so to paint a picture I will answer: one bite at a time.
+How do you eat an elephant? Well... you dont. Elephants are magnificent creatures. Don't eat them (unless you're in an extreme situation.) But, its a figure of speech - one bite at a time.
 
 Take a complex task. Let's say you want to become an actor in Hollywood 🎭
 
@@ -109,9 +109,18 @@ No.
 
 You need to know how to get things done.  
 And you need to know it pretty darn well.  
-Worry not though! It's a **skill** that can be acquired same as learning to multiply. 
+Worry not though! It's a **skill** that can be acquired same as learning to multiply.
 
-There's a thousand paths for every single goal. What works for me doesn't have to work for you. There's no golden rule for achievements. There's no one right way.
+The timer is the core of this application and will help you to keep track on your progress on getting things done.  
+For the poem example, for a learning session, it could be set up like this:
+1. learn first line
+2. learn second line
+3. learn third line
+4. repeat whole
+5. ...
+With that you will be able to recognize where's room for improvement. You can identify things you didn't expect and adjust your plan. 
+
+There are countless paths to every goal. What works for me doesn't have to work for you. There's no golden rule for achievements. There's no one right way.
 
 🔨 This application is a **a tool** to use not a tool that uses you.  
 🧠 A tool to **help you** think, not think for you.  
@@ -125,7 +134,7 @@ There's a thousand paths for every single goal. What works for me doesn't have t
 ## How it works - the last final ultimate really last final 'how it works' part, I promise!
 It's mainly what I discovered while doing my paper version and my vision for the future versions. 
 
-### The root is in the time tracking.
+### The root lies in the time tracking.
 You open the app, list out the steps, measure the time.
 
 What does it give you? 
