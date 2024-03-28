@@ -1,6 +1,6 @@
 # Storage solution
 ## Status
-accepted
+deprecated with ADR2_localStorage
 
 ## Context
 - We need to keep data of the actions measured by users. At the moment it's simple date-action relation and action collection. It is expected to grow into action templates, some goals / habits tracking and certaing filtering, sorting and visualization of that data. 
