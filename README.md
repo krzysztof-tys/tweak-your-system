@@ -28,7 +28,7 @@ A tool to:
 - 5.0 - plan your week
 - 6.0 - project designer - expand features for the 'nameable laps'
 
-## How it works
+## Story time
 
 There's a long story for this. <sub>([TL;DR somewhere in the middle](#tldr))</sub>
 
@@ -52,9 +52,7 @@ Well... in extreme situations - yes, but extreme change comes with extreme risks
 
 There's a better way to manage that.
 
-## How it works, for real this time
-
-⚔ Divide and conquer ⚔ 
+## ⚔ Divide and conquer ⚔ 
 
 How do you eat an elephant? Well... you dont. Elephants are magnificent creatures. Don't eat them (unless you're in an extreme situation.) But some people say - one bite at a time.
 
@@ -95,11 +93,11 @@ You see what I did there? I took a complex task, divided it in smaller parts and
 
 That's ⚔ Divide and conquer ⚔ 
 
-## How it works - for real real
+## Back to the time tracker ⏰ 
 
-Let's go back to the time tracking thing ⏰ While searching for the perfect time tracker I noticed I just want to do one thing. 
+While searching for the perfect time tracker I noticed I just want to do one thing. 
 
-I just want to press **_next_** ⏭ ⏭ 
+I just want to press ⏭ **_next_** ⏭  
 
 I know what I'm doing. I just need to measure the time. So I took a piece of paper, wrote down my steps, started timer and marked a lap for each step. 
 
@@ -132,7 +130,7 @@ For the poem example, for a learning session, it could be set up something like 
 
 With that you will be able to recognize where's room for improvement. You can identify things you didn't expect and adjust your plan. <span id="tldr">&nbsp;</span>
 
-## How it works - the ultimate last final final (I promise!)
+## Features description
 It's mainly what I discovered while doing my paper version and my vision for the future versions. 
 
 Here are the core features:
