@@ -3,9 +3,6 @@
 
 Effortless, one button life tracker &amp; planning tool to help you set systems for inevitable success.
 
-## What is this?
-There are countless paths to every goal. What works for me doesn't have to work for you. There's no golden rule for achievements. There's no one right way.
-
 This app is **a tool**.
 
 🔨 A tool **to use** not a tool that uses you.  
@@ -16,6 +13,20 @@ A tool to:
 &nbsp;&nbsp;&nbsp;&nbsp;🛠 build habits  
 &nbsp;&nbsp;&nbsp;&nbsp;🛠 set systems (create and manage projects)  
 &nbsp;&nbsp;&nbsp;&nbsp;🛠 track performance  
+
+# Current version
+0.0.2 - pen & paper 🚀 coding in progress
+
+# Roadmap
+- 1.0 - a timer with nameable laps 
+- 2.0 - a timer with nameable laps and a history
+- 3.0 - save routines and rich 'laps'
+  - Save a set of 'laps' as a routine
+  - Add more options to the actions, like category,
+- 4.0 - plan your day
+- 4.5 - liquid planner - set proportions instead of exact time; plan according to expected timespan calculated from previous measurements
+- 5.0 - plan your week
+- 6.0 - project designer - expand features for the 'nameable laps'
 
 ## How it works
 
@@ -163,20 +174,6 @@ Second, yes - you need to organize your life yourself. No application is able to
 The American Society of Training and Development found that people are 65 percent likely to meet a goal after committing to another person. Their chances of success increase to 95 percent when they build in ongoing meetings with their partners to check in on their progress ([source](https://alumline.source.colostate.edu/being-held-accountable-for-your-goals/)). On the other hand Andrew Huberman says we shouldn't share our goals (prior to initiation an action toward this goal) -> [link](https://www.youtube.com/watch?v=tG-1XmWK8ms) 🤔
 
 Wheter or not you want to share your goals, join us and let's grow together!
-
-# Current version
-0.0.2 - pen & paper 🚀 coding in progress
-
-# Roadmap
-- 1.0 - a timer with nameable laps 
-- 2.0 - a timer with nameable laps and a history
-- 3.0 - save routines and rich 'laps'
-  - Save a set of 'laps' as a routine
-  - Add more options to the actions, like category,
-- 4.0 - plan your day
-- 4.5 - liquid planner - set proportions instead of exact time; plan according to expected timespan calculated from previous measurements
-- 5.0 - plan your week
-- 6.0 - project designer - expand features for the 'nameable laps'
 
 # Technicalities 
 
