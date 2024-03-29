@@ -3,7 +3,7 @@
 
 Effortless, one button life tracker. Organize your life, build healthy habits and set systems for inevitable succes.
 
-# Level 0 - Relaxed mode and Focused mode
+## Level 0 - Relaxed mode and Focused mode
 
 Every other time tracking app is trying to measure everything you're doing.  
 Which is exauhsting, especially if you're not used to this. 
@@ -16,7 +16,7 @@ You have two states of the app:
 
 <img src="/docs/20240329_0_relaxed_focused.jpg" />
 
-# Level 1 - The Time Tracker (Focused mode)
+## Level 1 - The Time Tracker (Focused mode)
 
 Time Tracker is the heart of this application. But it's not an ordinary time tracker. It's heavily based on the OODA loop[^1]. It's designed in a way that is noninterruptive so that you can put your whole power into the activity you're doing.
 
@@ -31,25 +31,25 @@ Time Tracker is the heart of this application. But it's not an ordinary time tra
 
 The benefits: more focus (measuring the time), dividing task into smaller, more focus
 
-# Level 2 - Routines
+## Level 2 - Routines
 
 After you work some time with dividing your action into steps you'll notice you have some things that repeat and you'd like to save that. That's what you use routines for. A routine is simply a saved set of actions.
 
 <img src="/docs/20240329_2_routines.jpg" />
 
-# Level 3 - History
+## Level 3 - History
 
 Simple history with CSV export so that you can analyze your progress and compare it with your plan
 
 <img src="/docs/20240329_3_history.jpg" /> 
 
-# Level 4 - Designer
+## Level 4 - Designer
 
 After you work some time with routines and create a bunch of them you'll notice you'd like to add some properties to them like category or expected duration. 
 
 That's when Designer Mode comes into play so that you can create more complex routines or even whole projects.
 
-# Level 5 - Planner 
+## Level 5 - Planner 
 
 Arrange your routines in the callendar. 
 
