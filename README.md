@@ -55,30 +55,37 @@ That's when Designer Mode comes into play so that you can create more complex ro
 
 Arrange your routines in the callendar. 
 
-# Technicalities 
+# Instalation and running 
 
-## Instalation and running on virtual android device
+## Prerequisites
+For Android Virtual Device:  
+- install android studio
+- create a new virtual device (android studio -> virtual device manager -> create new virtual device; preferably choose pixel 4 with google play tools available)
 
-### prerequisites:
-install android studio and create a new virtual device (android studio -> virtual device manager -> create new virtual device)
-(preferably choose pixel 4 with google play tools available)
+- download and install nodejs (https://nodejs.org/en)
+- install pnpm (or use npm if you like) (https://pnpm.io/installation)
+- install java 17 on your device 
+- add java folder (for example C:\Program Files\java\java-17) to environmental variable as JAVA_HOME
+- add java bin folder to PATH
 
-download and install nodejs (https://nodejs.org/en)
-install pnpm (or use npm if you like) (https://pnpm.io/installation)
+- in project folder create file android/local.properties and put there path to sdk folder on your devide (ex. `sdk.dir=C:\\Users\\USERNAME\\AppData\\Local\\Android\\sdk`)
 
-on windows:
-install java 17 on your device and add java folder (for example C:\Program Files\java\java-17) to environmental variable as JAVA_HOME
-add java bin folder to PATH
+### Running app
 
-in project folder create file android/local.properties and put there path to sdk folder on your devide (ex. `sdk.dir=C:\\Users\\USERNAME\\AppData\\Local\\Android\\sdk`)
+- `pnpm install` (or `npm install`)
 
-### running app
-`pnpm install` (or `npm install`)
-open virtual android machine via android studio
-`npx expo run:android`\
-> this will build our app and you'll be able to run it
-press `a` to run it on an android virtual device
-after app builds you'll be able to find an icon with ignite and clicking on it will open our app
+Android Virtual Device:
+- `npx expo run:android`  
+> this will build our app and you'll be able to run it  
+press `a` to run it on an android virtual device  
+after app builds you'll be able to find an icon with ignite and clicking on it will open our app  
+
+Expo Go:  
+- `npx expo start`
+- `s` to switch to expo go build if needed
+- scan qr with expo go app on your device
+- chose expo go build on your device
+
 
 🔥📱🧠
 
