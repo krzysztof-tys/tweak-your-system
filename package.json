@@ -35,7 +35,6 @@
     "@react-native-async-storage/async-storage": "^1.21.0",
     "@react-navigation/native": "^6.0.2",
     "@react-navigation/native-stack": "^6.0.2",
-    "@realm/react": "^0.6.2",
     "@shopify/flash-list": "^1.6.3",
     "apisauce": "3.0.1",
     "date-fns": "^2.30.0",
@@ -60,8 +59,7 @@
     "react-native-reanimated": "~3.6.0",
     "react-native-safe-area-context": "4.8.2",
     "react-native-screens": "~3.29.0",
-    "react-native-web": "~0.19.6",
-    "realm": "^12.6.2"
+    "react-native-web": "~0.19.6"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",

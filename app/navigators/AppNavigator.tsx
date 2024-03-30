@@ -13,8 +13,7 @@ import Config from "../config"
 import { navigationRef, useBackButtonHandler } from "./navigationUtilities"
 import { colors } from "app/theme"
 import { SetupScreen, TimerScreen, SummaryScreen } from "../screens"
-import { Activity, type TRecord, type RootStackParamList, SCREEN, Action, Record } from "app/common"
-import { RealmProvider } from "@realm/react"
+import { Activity, type TRecord, type RootStackParamList, SCREEN, } from "app/common"
 
 /**
  * This type allows TypeScript to know what routes are defined in this navigator
@@ -54,7 +53,7 @@ const AppStack = observer(function AppStack() {
   const [records, setRecords] = React.useState<TRecord[]>([])
 
   return (
-    <React.Fragment>
+    <>
       <Stack.Navigator
         screenOptions={{ headerShown: false, navigationBarColor: colors.background }}
       >
@@ -68,7 +67,7 @@ const AppStack = observer(function AppStack() {
           {() => <SummaryScreen records={records} />}
         </Stack.Screen>
       </Stack.Navigator>
-    </React.Fragment>
+    </>
   )
 })
 
@@ -81,7 +80,6 @@ export const AppNavigator = observer(function AppNavigator(props: NavigationProp
   useBackButtonHandler((routeName) => exitRoutes.includes(routeName))
 
   return (
-    <RealmProvider schema={[Action, Record]}>
       <NavigationContainer
         ref={navigationRef}
         theme={colorScheme === "dark" ? DarkTheme : DefaultTheme}
@@ -89,6 +87,5 @@ export const AppNavigator = observer(function AppNavigator(props: NavigationProp
       >
         <AppStack />
       </NavigationContainer>
-    </RealmProvider>
   )
 })
