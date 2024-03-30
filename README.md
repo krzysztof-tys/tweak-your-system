@@ -1,4 +1,4 @@
-<img src="/docs/abstract-geometric-dragon.jpeg" />
+<p align="center"><img src="/docs/abstract_geometric_dragon.png" width="260em" height="260em" /></p>
 
 # Tweak Your System - a simple time tracker with remarkable effects
 <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
