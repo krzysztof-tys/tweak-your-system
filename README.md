@@ -87,7 +87,7 @@ Expo Go:
 - chose expo go build on your device
 
 
-🔥📱🧠
+🔥📱🧠🐰
 
 
 [^1]: What's an OODA loop? It's a decision-making framework created by Colonel John Boyd, a United States Air Force fighter pilot who later became known for his contributions to military theory. The OODA loop consists of four stages: Observe, Orient, Decide, and Act.
