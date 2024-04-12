@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="64770c45-83d8-45ea-8275-31fff700a78c" name="Changes" comment="" />
+    <list default="true" id="64770c45-83d8-45ea-8275-31fff700a78c" name="Changes" comment="add .idea to gitignore">
+      <change afterPath="$PROJECT_DIR$/app/createProject.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,13 +17,27 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;krzysztof-tys&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="6195d535-8448-417d-bf75-5879fec1e020" />
+        <option name="url" value="git@github.com:krzysztof-tys/tweak-your-system.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2ev8LiM5o2FfszSbTEsbHGIAMwa" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -27,11 +48,19 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "js.linters.configure.manually.selectedeslint": "true",
+    "last_opened_file_path": "C:/SOURCE/tweak-your-system",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.eslint": "C:\\SOURCE\\tweak-your-system\\node_modules\\eslint",
+    "node.js.selected.package.standard": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "pnpm",
+    "prettierjs.PrettierConfiguration.Package": "C:\\SOURCE\\tweak-your-system\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
+    "ts.external.directory.path": "C:\\SOURCE\\tweak-your-system\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -43,11 +72,55 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1712773639298</updated>
-      <workItem from="1712773642231" duration="380000" />
+      <workItem from="1712773642231" duration="2034000" />
+      <workItem from="1712868675481" duration="5981000" />
+      <workItem from="1712874691618" duration="1175000" />
+      <workItem from="1712915471534" duration="26000" />
+      <workItem from="1712934536814" duration="1340000" />
     </task>
+    <task id="LOCAL-00001" summary="add typescript">
+      <option name="closed" value="true" />
+      <created>1712869918419</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1712869918419</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add expo router">
+      <option name="closed" value="true" />
+      <created>1712873382050</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1712873382050</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add eslint and eslint for typescript">
+      <option name="closed" value="true" />
+      <created>1712874903733</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1712874903733</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add .idea to gitignore">
+      <option name="closed" value="true" />
+      <created>1712875194048</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1712875194048</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add typescript" />
+    <MESSAGE value="add expo router" />
+    <MESSAGE value="add eslint and eslint for typescript" />
+    <MESSAGE value="add .idea to gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="add .idea to gitignore" />
   </component>
 </project>

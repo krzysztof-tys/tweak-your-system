@@ -2,17 +2,24 @@ import { StatusBar } from "expo-status-bar";
 import { Button, StyleSheet, Text, View } from "react-native";
 import { useState } from "react";
 
-interface Project {}
+export interface Project {
+  name: string;
+  timeframe: string;
+  resources: string;
+  progress: string;
+  commitment: string;
+  actions: string;
+}
 
 export default function App() {
   const [projects, setProjects] = useState<Project>([]);
 
-  const createNewProject = () => {};
+  const openCreateNewProject = () => {};
 
   return (
     <View style={styles.container}>
       <Text>start working on your app!</Text>
-      <Button onPress={createNewProject} title={"Create new project"} />
+      <Button onPress={openCreateNewProject} title={"Create new project"} />
       <Text>hot reload</Text>
       <StatusBar style="auto" />
     </View>
