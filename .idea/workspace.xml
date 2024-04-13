@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64770c45-83d8-45ea-8275-31fff700a78c" name="Changes" comment="add .idea to gitignore">
-      <change afterPath="$PROJECT_DIR$/app/createProject.tsx" afterDir="false" />
+    <list default="true" id="64770c45-83d8-45ea-8275-31fff700a78c" name="Changes" comment="add a page">
+      <change afterPath="$PROJECT_DIR$/services/models.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +52,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "js.linters.configure.manually.selectedeslint": "true",
-    "last_opened_file_path": "C:/SOURCE/tweak-your-system",
+    "last_opened_file_path": "C:/SOURCE/tweak-your-system/services",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -59,7 +61,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "pnpm",
     "prettierjs.PrettierConfiguration.Package": "C:\\SOURCE\\tweak-your-system\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "ts.external.directory.path": "C:\\SOURCE\\tweak-your-system\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -76,7 +78,9 @@
       <workItem from="1712868675481" duration="5981000" />
       <workItem from="1712874691618" duration="1175000" />
       <workItem from="1712915471534" duration="26000" />
-      <workItem from="1712934536814" duration="1340000" />
+      <workItem from="1712934536814" duration="2139000" />
+      <workItem from="1712995470470" duration="616000" />
+      <workItem from="1713000357955" duration="6138000" />
     </task>
     <task id="LOCAL-00001" summary="add typescript">
       <option name="closed" value="true" />
@@ -110,7 +114,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712875194048</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add a page">
+      <option name="closed" value="true" />
+      <created>1712953783382</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1712953783382</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +133,7 @@
     <MESSAGE value="add expo router" />
     <MESSAGE value="add eslint and eslint for typescript" />
     <MESSAGE value="add .idea to gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="add .idea to gitignore" />
+    <MESSAGE value="add a page" />
+    <option name="LAST_COMMIT_MESSAGE" value="add a page" />
   </component>
 </project>

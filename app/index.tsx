@@ -1,25 +1,16 @@
 import { StatusBar } from "expo-status-bar";
 import { Button, StyleSheet, Text, View } from "react-native";
-import { useState } from "react";
-
-export interface Project {
-  name: string;
-  timeframe: string;
-  resources: string;
-  progress: string;
-  commitment: string;
-  actions: string;
-}
+import { Link } from "expo-router";
 
 export default function App() {
-  const [projects, setProjects] = useState<Project>([]);
-
   const openCreateNewProject = () => {};
 
   return (
     <View style={styles.container}>
       <Text>start working on your app!</Text>
-      <Button onPress={openCreateNewProject} title={"Create new project"} />
+      <Link href={"/createProject"} asChild>
+        <Button onPress={openCreateNewProject} title={"Create new project"} />
+      </Link>
       <Text>hot reload</Text>
       <StatusBar style="auto" />
     </View>
