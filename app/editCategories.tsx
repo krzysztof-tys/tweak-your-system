@@ -2,7 +2,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import { useStore } from './index';
 import { observer } from 'mobx-react-lite';
 
-const EditCategories = (props: any) => {
+const EditCategories = (props: unknown) => {
   const store = useStore();
 
   console.log('store:', store);

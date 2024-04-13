@@ -1,4 +1,4 @@
-import { IRootStore, RootStore } from '../services/models';
+import { IRootStore } from '../services/models';
 import { createContext, useContext } from 'react';
 import App from './app';
 
