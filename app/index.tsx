@@ -1,27 +1,12 @@
-import { StatusBar } from "expo-status-bar";
-import { Button, StyleSheet, Text, View } from "react-native";
-import { Link } from "expo-router";
+import { IRootStore, RootStore } from '../services/models';
+import { createContext, useContext } from 'react';
+import App from './app';
 
-export default function App() {
-  const openCreateNewProject = () => {};
+const StoreContext = createContext<IRootStore>({} as IRootStore);
 
-  return (
-    <View style={styles.container}>
-      <Text>start working on your app!</Text>
-      <Link href={"/createProject"} asChild>
-        <Button onPress={openCreateNewProject} title={"Create new project"} />
-      </Link>
-      <Text>hot reload</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+export const useStore = () => useContext(StoreContext);
+export const StoreProvider = StoreContext.Provider;
+
+export default function Root() {
+  return <App />;
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});

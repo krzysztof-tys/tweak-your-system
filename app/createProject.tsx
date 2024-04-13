@@ -1,4 +1,4 @@
-import { Button, StyleSheet, Text, TextInput, View } from "react-native";
+import { Button, StyleSheet, Text, TextInput, View } from 'react-native';
 
 const CreateProject = () => {
   const createProject = () => {};
@@ -11,13 +11,13 @@ const CreateProject = () => {
       <TextInput style={styles.input} />
       <Text>Resources</Text>
       <TextInput style={styles.input} />
-      <Text>Progress metrics:</Text>
       <Text>---</Text>
+      <Text>Progress metrics:</Text>
       <TextInput style={styles.input} />
       <Text>Commitment</Text>
       <TextInput style={styles.input} />
       <Text>---</Text>
-      <Button title={"create"} onPress={createProject} />
+      <Button title={'create'} onPress={createProject} />
     </View>
   );
 };
@@ -25,13 +25,13 @@ const CreateProject = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   input: {
-    borderColor: "gray",
-    width: "100%",
+    borderColor: 'gray',
+    width: '100%',
     borderWidth: 1,
     borderRadius: 10,
     padding: 10,
