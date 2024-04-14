@@ -1,5 +1,8 @@
 import { Instance, t } from 'mobx-state-tree'; // alternatively, `import { t } from "mobx-state-tree"`
 
+import uuid from 'react-native-uuid';
+
+// Generate a UUID
 interface ProjectProps {
   category: ICategory;
   name: string;
@@ -32,10 +35,16 @@ const Project = t
     },
   }));
 
-const Category = t.model({
-  id: t.identifier,
-  name: '',
-});
+const Category = t
+  .model({
+    id: t.identifier,
+    name: '',
+  })
+  .actions((self) => ({
+    setName(newName: string) {
+      self.name = newName;
+    },
+  }));
 
 const RootStore = t
   .model({
@@ -47,7 +56,35 @@ const RootStore = t
       return Array.from(self.categories).length === 0;
     },
     get getAllCategories() {
-      return Array.from(self.categories).values();
+      return Array.from(self.categories.values());
+    },
+  }))
+  .actions((self) => ({
+    hasEmptyCategory() {
+      return Array.from(self.categories.values()).some(
+        (category) => category.name === ''
+      );
+    },
+    addEmptyCategory() {
+      const newCategory = { id: uuid.v4().toString(), name: '' };
+      self.categories.put(newCategory);
+    },
+    clearEmptyCategory() {
+      const emptyCategory = Array.from(self.categories.values()).find(
+        (category) => category.name === ''
+      );
+
+      if (emptyCategory === undefined) {
+        return;
+      }
+
+      self.categories.delete(emptyCategory.id);
+    },
+    updateCategory(id: string, newName: string) {
+      self.categories.get(id)?.setName(newName);
+    },
+    removeCategory(id: string) {
+      self.categories.delete(id);
     },
   }));
 
