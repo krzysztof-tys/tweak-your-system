@@ -1,7 +1,6 @@
 import { Slot } from 'expo-router';
 import { Text } from 'react-native';
-import { StoreProvider } from './index';
-import { RootStore } from '../services/models';
+import { RootStore, StoreProvider } from '../store';
 
 const store = RootStore.create({
   projects: {},

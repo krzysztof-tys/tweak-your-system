@@ -1,7 +1,13 @@
 import { Button, StyleSheet, Text, TextInput, View } from 'react-native';
+import { Link } from 'expo-router';
+import { useStore } from '../store';
 
 const CreateProject = () => {
-  const createProject = () => {};
+  const store = useStore();
+
+  const createProject = () => {
+    store.addProject();
+  };
 
   return (
     <View style={styles.container}>
@@ -17,7 +23,9 @@ const CreateProject = () => {
       <Text>Commitment</Text>
       <TextInput style={styles.input} />
       <Text>---</Text>
-      <Button title={'create'} onPress={createProject} />
+      <Link href={'/'} asChild>
+        <Button title={'create'} onPress={createProject} />
+      </Link>
     </View>
   );
 };

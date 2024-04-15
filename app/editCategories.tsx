@@ -1,9 +1,9 @@
 import { Button, StyleSheet, View } from 'react-native';
-import { useStore } from './index';
 import { observer } from 'mobx-react-lite';
 import Category from '../components/category';
 import { Link } from 'expo-router';
 import { useEffect } from 'react';
+import { useStore } from '../store';
 
 const EditCategories = () => {
   const store = useStore();

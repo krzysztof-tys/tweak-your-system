@@ -19,6 +19,7 @@ const Category: React.FC<CategoryProps> = ({ category, update, remove }) => {
         value={newName}
         onChangeText={(text) => setNewName(text)}
         onEndEditing={() => update(category.id, newName)}
+        style={styles.categoryText}
       />
       <Button title={'x'} onPress={() => remove(category.id)} />
     </View>
@@ -35,9 +36,6 @@ const styles = StyleSheet.create({
   },
   categoryText: {
     width: '75%',
-    borderRadius: 3,
-    borderWidth: 1,
-    borderColor: 'black',
     display: 'flex',
     alignItems: 'center',
     textAlign: 'center',
