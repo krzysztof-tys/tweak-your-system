@@ -5,6 +5,7 @@ import { IProject } from '../store/models';
 interface ProjectComponentProps {
   project: IProject;
 }
+
 const Project: React.FC<ProjectComponentProps> = ({ project }) => {
   return (
     <View>
