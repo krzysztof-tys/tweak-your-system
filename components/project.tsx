@@ -9,7 +9,10 @@ interface ProjectComponentProps {
 const Project: React.FC<ProjectComponentProps> = ({ project }) => {
   return (
     <View>
-      <Text>{project.name}</Text>
+      <Text>
+        {project.name},{project.resources},{project.timeframe},{' '}
+        {project.progressMetrics},{project.commitment}
+      </Text>
     </View>
   );
 };

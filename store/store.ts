@@ -4,6 +4,8 @@ import uuid from 'react-native-uuid';
 import { Project } from './models';
 import { Category } from './models';
 import { createContext, useContext } from 'react';
+import { ProjectProps } from '../app/createProject';
+
 const RootStore = t
   .model({
     projects: t.map(Project),
@@ -44,8 +46,16 @@ const RootStore = t
     removeCategory(id: string) {
       self.categories.delete(id);
     },
-    addProject() {
-      throw new Error('Not implemented');
+    addProject(data: ProjectProps) {
+      self.projects.put({
+        id: uuid.v4().toString(),
+        name: data.name,
+        actions: '',
+        commitment: data.commitment,
+        progressMetrics: data.progressMetrics,
+        resources: data.resources,
+        timeframe: data.timeFrame,
+      });
     },
   }));
 

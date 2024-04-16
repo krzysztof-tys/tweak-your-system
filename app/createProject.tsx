@@ -1,30 +1,71 @@
-import { Button, StyleSheet, Text, TextInput, View } from 'react-native';
+import { Button, StyleSheet, Text, View } from 'react-native';
 import { Link } from 'expo-router';
 import { useStore } from '../store';
+import { useForm } from 'react-hook-form';
+import ControlledTextInput from '../components/controlledTextInput';
+
+export interface ProjectProps {
+  name: string;
+  timeFrame: string;
+  resources: string;
+  progressMetrics: string;
+  commitment: string;
+}
 
 const CreateProject = () => {
   const store = useStore();
 
-  const createProject = () => {
-    store.addProject();
+  const createProject = (data: ProjectProps) => {
+    console.log(data);
+    store.addProject(data);
   };
+
+  const { control, handleSubmit } = useForm<ProjectProps>({
+    defaultValues: {
+      name: '',
+      timeFrame: '',
+      resources: '',
+      progressMetrics: '',
+      commitment: '',
+    },
+  });
 
   return (
     <View style={styles.container}>
       <Text>Name:</Text>
-      <TextInput style={styles.input} />
+      <ControlledTextInput
+        name={'name'}
+        control={control}
+        style={styles.input}
+      />
       <Text>Time frame:</Text>
-      <TextInput style={styles.input} />
+      <ControlledTextInput
+        name={'timeFrame'}
+        control={control}
+        style={styles.input}
+      />
       <Text>Resources</Text>
-      <TextInput style={styles.input} />
+      <ControlledTextInput
+        name={'resources'}
+        control={control}
+        style={styles.input}
+      />
       <Text>---</Text>
       <Text>Progress metrics:</Text>
-      <TextInput style={styles.input} />
+      <ControlledTextInput
+        name={'progressMetrics'}
+        control={control}
+        style={styles.input}
+      />
       <Text>Commitment</Text>
-      <TextInput style={styles.input} />
+      <ControlledTextInput
+        name={'commitment'}
+        control={control}
+        style={styles.input}
+      />
       <Text>---</Text>
       <Link href={'/'} asChild>
-        <Button title={'create'} onPress={createProject} />
+        <Button title={'create'} onPress={handleSubmit(createProject)} />
       </Link>
     </View>
   );
