@@ -1,3 +1,6 @@
+## Dat 47 [16.04.2024]
+react-hook-form vs formik
+
 ## Day 46 
 refactor of store
 
