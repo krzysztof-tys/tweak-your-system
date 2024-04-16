@@ -1,5 +1,6 @@
 ## Dat 47 [16.04.2024]
 react-hook-form vs formik
+https://react-hook-form.com/get-started#ReactNative
 
 ## Day 46 
 refactor of store
