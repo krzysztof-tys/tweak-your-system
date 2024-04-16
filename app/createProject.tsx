@@ -1,7 +1,12 @@
 import { Button, StyleSheet, Text, View } from 'react-native';
 import { Link } from 'expo-router';
 import { useStore } from '../store';
-import { useForm } from 'react-hook-form';
+import {
+  FieldValues,
+  useController,
+  UseControllerProps,
+  useForm,
+} from 'react-hook-form';
 import ControlledTextInput from '../components/controlledTextInput';
 
 export interface ProjectProps {

@@ -1,32 +1,22 @@
 import React from 'react';
 import { StyleProp, TextInput, TextStyle } from 'react-native';
-import { Control, Controller, FieldValues, Path } from 'react-hook-form';
+import {
+  FieldValues,
+  useController,
+  UseControllerProps,
+} from 'react-hook-form';
 
-interface ControlledTextInputProps<T extends FieldValues> {
-  name: Path<T>;
-  control: Control<T>;
+interface ControlledTextInputProps<T extends FieldValues>
+  extends UseControllerProps<T> {
   style: StyleProp<TextStyle>;
 }
 
-const ControlledTextInput = <T extends FieldValues>({
-  name,
-  control,
-  style,
-}: ControlledTextInputProps<T>) => {
-  return (
-    <Controller
-      name={name}
-      control={control}
-      render={({ field: { onChange, onBlur, value } }) => (
-        <TextInput
-          style={style}
-          onBlur={onBlur}
-          onChangeText={onChange}
-          value={value}
-        />
-      )}
-    />
-  );
+const ControlledTextInput = <T extends FieldValues>(
+  props: ControlledTextInputProps<T>
+) => {
+  const { field } = useController<T>(props);
+
+  return <TextInput {...field} style={props.style} />;
 };
 
 export default ControlledTextInput;
