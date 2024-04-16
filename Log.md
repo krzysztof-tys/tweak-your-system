@@ -1,9 +1,18 @@
+## Dat 47 [16.04.2024]
+react-hook-form vs formik
+https://react-hook-form.com/get-started#ReactNative
+
+## Day 46 
+refactor of store
+
+next -> create project creates project
+
 ## Day 45 [14.04.2024]
 editable, removable, stored in mst categories
 
 next: categories dropdown in create project  
-nnext: list of projects in main view
-nnnext: timer when clicked on project in main view
+nnext: list of projects in main view  
+nnnext: timer when clicked on project in main view  
 nnnnext: save timer records in database 
 
 ## Day 44 [ 13/04.2024 ]
