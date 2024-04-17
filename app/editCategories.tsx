@@ -1,4 +1,4 @@
-import { Button, StyleSheet, View } from 'react-native';
+import { Button, ScrollView, StyleSheet } from 'react-native';
 import { observer } from 'mobx-react-lite';
 import Category from '../components/category';
 import { Link } from 'expo-router';
@@ -21,7 +21,7 @@ const EditCategories = () => {
   };
 
   return (
-    <View style={styles.container}>
+    <ScrollView contentContainerStyle={styles.container}>
       {store.getAllCategories.map((category) => (
         <Category
           key={category.id}
@@ -33,7 +33,7 @@ const EditCategories = () => {
       <Link href={'/'} asChild>
         <Button title="finish" onPress={finish} />
       </Link>
-    </View>
+    </ScrollView>
   );
 };
 
