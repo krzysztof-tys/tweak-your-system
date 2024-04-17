@@ -1,6 +1,12 @@
 ## Dat 47 [16.04.2024]
-react-hook-form vs formik
+react-hook-form vs formik  
 https://react-hook-form.com/get-started#ReactNative
+
+user can create project
+main page displays projects
+react-hook-form used
+
+next -> timer
 
 ## Day 46 
 refactor of store
