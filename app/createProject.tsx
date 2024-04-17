@@ -1,5 +1,5 @@
 import { Button, StyleSheet, Text, View } from 'react-native';
-import { Link } from 'expo-router';
+import { Link, router } from 'expo-router';
 import { useStore } from '../store';
 import { useForm } from 'react-hook-form';
 import ControlledTextInput from '../components/controlledTextInput';
@@ -16,8 +16,8 @@ const CreateProject = () => {
   const store = useStore();
 
   const createProject = (data: ProjectProps) => {
-    console.log(data);
     store.addProject(data);
+    router.navigate('/');
   };
 
   const { control, handleSubmit } = useForm<ProjectProps>({
