@@ -50,7 +50,6 @@ const RootStore = t
       self.projects.put({
         id: uuid.v4().toString(),
         name: data.name,
-        actions: '',
         commitment: data.commitment,
         progressMetrics: data.progressMetrics,
         resources: data.resources,

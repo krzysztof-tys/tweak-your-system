@@ -7,7 +7,6 @@ export const Project = t.model({
   resources: '',
   progressMetrics: '',
   commitment: '',
-  actions: '',
 });
 
 export interface IProject extends Instance<typeof Project> {}
