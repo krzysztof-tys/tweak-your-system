@@ -1,3 +1,6 @@
+## Day 50 [19.04.2024]
+plan of planning view
+
 ## Dat 47 [16.04.2024]
 react-hook-form vs formik  
 https://react-hook-form.com/get-started#ReactNative
