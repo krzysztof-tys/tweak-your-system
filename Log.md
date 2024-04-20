@@ -1,3 +1,6 @@
+## Day 51 [20.04.2024]
+
+
 ## Day 50 [19.04.2024]
 plan of planning view
 
