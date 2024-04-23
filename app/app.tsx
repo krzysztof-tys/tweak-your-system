@@ -14,6 +14,9 @@ export default function App() {
       <Link href={'/createProject'} asChild>
         <Button title={'Create new project'} />
       </Link>
+      <Link href={'/stopwatch'} asChild>
+        <Button title={'stopwatch test'} />
+      </Link>
       {store.getProjects.map((project) => (
         <Project key={project.id} project={project}></Project>
       ))}
