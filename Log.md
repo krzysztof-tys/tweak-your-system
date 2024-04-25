@@ -1,13 +1,10 @@
+## Day 56 [24.04.2024]
+
 ## Day 55 [24.04.2024]
 design
 
 ## Day 53 [22.04.2024]
 sqlite
-
-## Day 52
-
-## Day 51 [20.04.2024]
-
 
 ## Day 50 [19.04.2024]
 plan of planning view
