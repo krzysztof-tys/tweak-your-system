@@ -59,6 +59,7 @@ const RootStore = t
   }));
 
 const StoreContext = createContext<IRootStore>({} as IRootStore);
+
 export const useStore = () => useContext(StoreContext);
 export const StoreProvider = StoreContext.Provider;
 export interface IRootStore extends Instance<typeof RootStore> {}

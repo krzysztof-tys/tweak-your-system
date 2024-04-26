@@ -1,11 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
 import { Button, StyleSheet, View } from 'react-native';
 import { Link } from 'expo-router';
-import { useStore } from '../store';
-import Project from '../components/project';
+import ProjectList from '../components/projectList';
 
 export default function App() {
-  const store = useStore();
   return (
     <View style={styles.container}>
       <Link href={'/editCategories'} asChild>
@@ -17,9 +15,7 @@ export default function App() {
       <Link href={'/stopwatch'} asChild>
         <Button title={'stopwatch test'} />
       </Link>
-      {store.getProjects.map((project) => (
-        <Project key={project.id} project={project}></Project>
-      ))}
+      <ProjectList />
       <StatusBar style="auto" />
     </View>
   );

@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { IProject } from '../store/models';
 import { router } from 'expo-router';
 
@@ -14,10 +14,12 @@ const Project: React.FC<ProjectComponentProps> = ({ project }) => {
 
   return (
     <View style={styles.container}>
-      <Text onPressOut={enterFocusMode}>
-        {project.name},{project.resources},{project.timeframe},{' '}
-        {project.progressMetrics},{project.commitment}
-      </Text>
+      <Pressable onPress={enterFocusMode}>
+        <Text>
+          {project.name},{project.resources},{project.timeframe},{' '}
+          {project.progressMetrics},{project.commitment}
+        </Text>
+      </Pressable>
     </View>
   );
 };
