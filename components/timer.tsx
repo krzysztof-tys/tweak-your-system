@@ -1,4 +1,4 @@
-import { TRecord } from '../app/stopwatch';
+import { TRecord } from '../app/_stopwatch';
 import { useEffect, useState } from 'react';
 import { Text } from 'react-native';
 

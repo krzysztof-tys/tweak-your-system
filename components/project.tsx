@@ -9,7 +9,7 @@ interface ProjectComponentProps {
 
 const Project: React.FC<ProjectComponentProps> = ({ project }) => {
   const enterFocusMode = () => {
-    router.navigate('/stopwatch');
+    router.navigate(`/stopwatch/${project.id}`);
   };
 
   return (

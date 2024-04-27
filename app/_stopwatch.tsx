@@ -17,7 +17,7 @@ export type TRecord = {
   endDate?: number;
 };
 
-const Stopwatch = () => {
+const _stopwatch = () => {
   const activities = [
     { id: 0, name: 'first' },
     { id: 1, name: 'second' },
@@ -135,4 +135,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Stopwatch;
+export default _stopwatch;
