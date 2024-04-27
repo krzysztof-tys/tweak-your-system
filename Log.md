@@ -1,14 +1,8 @@
-## Day 57 [26.04.2024]
-sqlite
+## Day 58 [26.04.2024]
+Investigation on react-native architecture. Found promising resource on github; Also New Architecture is worth checking out.
+I know custom hook should be used for repeating things but it seems like the most natural way to handle focus mode logic.
 
-## Day 55 [24.04.2024]
-design
-
-## Day 53 [22.04.2024]
-sqlite
-
-## Day 50 [19.04.2024]
-plan of planning view
+Initially I wanted to create a class FocusModeController but hook seems much more simple and readable. 
 
 ## Dat 47 [16.04.2024]
 react-hook-form vs formik  
