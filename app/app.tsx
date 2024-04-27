@@ -12,9 +12,6 @@ export default function App() {
       <Link href={'/createProject'} asChild>
         <Button title={'Create new project'} />
       </Link>
-      <Link href={'/stopwatch'} asChild>
-        <Button title={'stopwatch test'} />
-      </Link>
       <ProjectList />
       <StatusBar style="auto" />
     </View>
