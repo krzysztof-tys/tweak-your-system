@@ -1,3 +1,6 @@
+## Day 59 [28.04.2024]
+vacation
+
 ## Day 58 [26.04.2024]
 Investigation on react-native architecture. Found promising resource on github; Also New Architecture is worth checking out.
 I know custom hook should be used for repeating things but it seems like the most natural way to handle focus mode logic.
