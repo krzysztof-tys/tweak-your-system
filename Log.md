@@ -1,3 +1,6 @@
+## Day 60 
+traveling
+
 ## Day 59 [28.04.2024]
 vacation
 
